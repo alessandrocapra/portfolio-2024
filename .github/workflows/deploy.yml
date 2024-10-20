@@ -24,15 +24,15 @@ jobs:
       - name: Build and push frontend Docker image
         uses: docker/build-push-action@v2
         with:
-          context: /opt/projects/test-webapp/nextjs-test
+          context: ./nextjs-test
           push: true
           tags: alessandrocapra/nextjs-test:latest
 
       - name: Build and push backend Docker image
         uses: docker/build-push-action@v2
         with:
-          context: /opt/projects/test-webapp/backend
-          file: /opt/projects/test-webapp/backend/Dockerfile.multistage
+          context: ./backend
+          file: ./backend/Dockerfile.multistage
           push: true
           tags: alessandrocapra/go-backend:latest
 
