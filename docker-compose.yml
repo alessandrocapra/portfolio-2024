@@ -3,7 +3,7 @@ version: '3.8'
 services:
   frontend:
     build:
-      context: ./nextjs-test
+      context: /home/ale/dev/test-webapp/nextjs-test
       dockerfile: Dockerfile
     image: alessandrocapra/nextjs-test:latest
     ports:
@@ -15,15 +15,15 @@ services:
 
   backend:
     build:
-      context: ./go-test
-      dockerfile: Dockerfile
+      context: ./backend
+      dockerfile: /home/ale/dev/test-webapp/backend/Dockerfile.multistage
     image: alessandrocapra/go-test:latest
     ports:
       - "8081:8081"
     environment:
       - PORT=8081
     volumes:
-      - ./go-test:/app
+      - ./backend/app
 
 volumes:
-  go-test:
+  backend:
