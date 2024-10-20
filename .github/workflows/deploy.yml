@@ -32,6 +32,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./docker-gs-ping
+          file: ./docker-gs-ping/Dockerfile.multistage
           push: true
           tags: alessandrocapra/go-backend:latest
 
