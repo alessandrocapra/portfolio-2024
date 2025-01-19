@@ -2,17 +2,19 @@
 function App() {
   return (
     <div className="flex flex-col gap-8 sm:gap-12">
-      <div className="sm:flex sm:gap-4">
-        <div className="sm:w-1/2">
-          <h1 className="font-semibold">Alessandro Capra</h1>
-          <p className="text-md max-w-prose">
-            I'm a senior frontend engineer from Italy, lived in Germany, Finland and currently living in the Netherlands
-          </p>
-          <p className="text-md max-w-prose">
-            I strive to <span className="font-bold">write code that turns into value</span>, both for users and the business
-          </p>
+      <div className="sm:flex  sm:gap-4">
+        <div className="sm:w-1/2 sm:flex sm:flex-col sm:justify-center lg:w-2/3">
+          <h1 className="font-semibold mb-4">Alessandro Capra</h1>
+          <div className="text-md max-w-prose">
+            <p>
+              I'm a senior frontend engineer from Italy, lived in Germany, Finland and currently living in the Netherlands
+            </p>
+            <p>
+              I strive to <span className="font-bold">write code that turns into value</span>, both for users and the business
+            </p>
+          </div>
         </div>
-        <img src='/images/hike-01.jpeg' alt='Me hiking in the mountains' className="rounded-lg w-full h-auto object-cover sm:w-1/2" />
+        <img src='/images/hike-01.jpeg' alt='Me hiking in the mountains' className="rounded-lg w-full h-auto object-cover sm:w-1/2 lg:w-1/3" />
       </div>
       <div>
         <h2 className="font-mono pb-4">TLDR;</h2>
