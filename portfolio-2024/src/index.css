@@ -13,9 +13,12 @@
     @apply font-mono;
   }
   h1 {
-    @apply text-5xl;
+    @apply text-3xl;
   }
   h2 {
     @apply text-2xl;
+  }
+  p {
+    @apply my-4;
   }
 }

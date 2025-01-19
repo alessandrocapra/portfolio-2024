@@ -1,37 +1,36 @@
+
 function App() {
   return (
-    <div>
-      <div className="flex flex-col space-y-4 py-6">
-        <h1 className="font-semibold">Hey there!</h1>
-        <div>
-          <p className="text-xl">
-            I'm Alessandro, frontend engineer with a strong background and eye
-            for great UX
+    <div className="flex flex-col gap-8 sm:gap-12">
+      <div className="sm:flex sm:gap-4">
+        <div className="sm:w-1/2">
+          <h1 className="font-semibold">Alessandro Capra</h1>
+          <p className="text-md max-w-prose">
+            I'm a senior frontend engineer from Italy, lived in Germany, Finland and currently living in the Netherlands
+          </p>
+          <p className="text-md max-w-prose">
+            I strive to <span className="font-bold">write code that turns into value</span>, both for users and the business
           </p>
         </div>
+        <img src='/images/hike-01.jpeg' alt='Me hiking in the mountains' className="rounded-lg w-full h-auto object-cover sm:w-1/2" />
       </div>
-      <div className="py-2 mt-4">
-        <h2 className="font-mono">TLDR;</h2>
-        <ul className="list-disc list-inside">
+      <div>
+        <h2 className="font-mono pb-4">TLDR;</h2>
+        <ul className="list-disc list-inside space-y-3">
           <li>
-            Software engineer (frontend) with more than 7 years of experience,
-            both building mobile apps (React Native) and web applications
-            (React, NextJS...)
+            <span className="font-semibold">Frontend engineer</span> | 7+ YOE
           </li>
           <li>
-            Experienced both startup and corporate environments, thus developing
-            skills for greenfield projects, as well as the ones with complex
-            business logic
+            Experienced in crafting web (<span className="text-gray-900">React, NextJS</span>) and mobile (<span className="text-gray-900">React Native</span>) experiences
           </li>
           <li>
-            <b>Problem solver attitude</b>: even if not my area of expertise, I
-            will try to figure it out
+            Comfortable in both <span className="text-gray-900">startup chaos</span> and <span className="text-gray-900">corporate structure</span>; from greenfield projects to maintaining complex legacy systems
           </li>
           <li>
-            Software engineer (frontend) with more than 7 years of experience
+            Focused on <span className="font-semibold">reducing complexity</span>: from avoiding overengineered solutions to finding simpler ways to achieve business goals
           </li>
           <li>
-            Software engineer (frontend) with more than 7 years of experience
+            Tech enthusiast always eager to explore new tools and approaches
           </li>
         </ul>
       </div>
