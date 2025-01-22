@@ -25,8 +25,8 @@ const Layout = () => {
             {/* Desktop Navigation */}
             <nav className="flex items-center space-x-4">
               <CustomNavLink to="/">Home</CustomNavLink>
-              <CustomNavLink to="/about">About</CustomNavLink>
               <CustomNavLink to="/projects">Projects</CustomNavLink>
+              <CustomNavLink to="/about">About</CustomNavLink>
             </nav>
           </div>
         </div>
