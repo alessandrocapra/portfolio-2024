@@ -7,7 +7,7 @@ import { Routes } from "react-router";
 import About from "./pages/about/About.tsx";
 import Projects from "./pages/projects/Projects.tsx";
 import Layout from "./layouts/PageLayout.tsx";
-import Project from "./pages/projects/Project.tsx";
+import CustodianProject from "./pages/projects/CustodianProject.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -19,7 +19,7 @@ createRoot(document.getElementById("root")!).render(
 
           <Route path="projects">
             <Route index element={<Projects />} />
-            <Route path=":project" element={<Project />} />
+            <Route path="custodian" element={<CustodianProject />} />
           </Route>
         </Route>
       </Routes>

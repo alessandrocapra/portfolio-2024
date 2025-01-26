@@ -40,7 +40,6 @@ export default function Projects() {
         <ProjectCard title='Gamified respiratory exercises' url='/projects/gamified-respiratory-exercises' bgImageUrl={`${imagesFolder}/gamified-respiratory-exercises/master-thesis-header.png`} />
         <ProjectCard title='Babbelbord' url='/projects/babbelbord' bgImageUrl={`${imagesFolder}/babbelbord/babbelbord-header.png`} />
         <ProjectCard title='Beathoven' url='/projects/beathoven' bgImageUrl={`${imagesFolder}/beathoven/beathoven-header.png`} />
-        <ProjectCard title='Jammin' url='/projects/jammin' bgImageUrl={`${imagesFolder}/beathoven/beathoven-header.png`} />
       </div>
     </div>
   );
