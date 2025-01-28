@@ -31,7 +31,7 @@ const Layout = () => {
           </div>
         </div>
       </header>
-      <main className="container mx-auto px-4 pt-20 pb-16 min-h-[calc(100vh-4rem)]">
+      <main className="container mx-auto px-4 pt-20 min-h-[calc(100vh-4rem)]">
         <Outlet />
       </main>
       <footer className="w-full bg-white border-t">

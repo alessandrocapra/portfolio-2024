@@ -35,3 +35,5 @@ export const ProjectHighlight = ({ text }: { text: string }) => {
     </div>
   )
 }
+
+export const SectionTitle = (({ title }: { title: string }) => <h3 className="text-2xl font-medium">{title}</h3>)
