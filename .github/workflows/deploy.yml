@@ -27,7 +27,7 @@ jobs:
       - name: Build and push portfolio Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./portfolio-2024
           push: true
           tags: alessandrocapra/portfolio:latest
           cache-from: type=registry,ref=alessandrocapra/portfolio:latest
