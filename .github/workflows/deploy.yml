@@ -13,28 +13,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Login to Docker Hub
-        uses: docker/login-action@v1
+        uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build and push frontend Docker image
-        uses: docker/build-push-action@v2
-        with:
-          context: ./nextjs-test
-          push: true
-          tags: alessandrocapra/nextjs-test:latest
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
 
-      - name: Build and push backend Docker image
-        uses: docker/build-push-action@v2
+      - name: Build and push portfolio Docker image
+        uses: docker/build-push-action@v5
         with:
-          context: ./backend
-          file: ./backend/Dockerfile.multistage
+          context: .
           push: true
-          tags: alessandrocapra/go-backend:latest
+          tags: alessandrocapra/portfolio:latest
+          cache-from: type=registry,ref=alessandrocapra/portfolio:latest
+          cache-to: type=inline
 
       - name: Deploy to VPS
         uses: appleboy/ssh-action@master
@@ -43,6 +40,12 @@ jobs:
           username: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            cd /opt/projects/test-webapp
-            docker compose pull
-            docker compose up -d --force-recreate
+            docker pull alessandrocapra/portfolio:latest
+            docker stop portfolio || true
+            docker rm portfolio || true
+            docker run -d \
+              --name portfolio \
+              --restart unless-stopped \
+              -p 3000:80 \
+              -v /etc/ssl/cloudflare:/etc/ssl/cloudflare:ro \
+              alessandrocapra/portfolio:latest
