@@ -2,7 +2,7 @@ import { PropsWithChildren } from "react"
 
 export const OneColumnSection = ({ children }: PropsWithChildren) => {
   return (
-    <section className="flex flex-col justify-center items-center py-4 sm:py-8 lg:max-w-prose lg:mx-auto">{children}</section>
+    <section className="flex flex-col justify-center sm:items-center py-4 sm:py-8 lg:max-w-prose lg:mx-auto">{children}</section>
   )
 }
 

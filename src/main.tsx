@@ -8,6 +8,7 @@ import About from "./pages/about/About.tsx";
 import Projects from "./pages/projects/Projects.tsx";
 import Layout from "./layouts/PageLayout.tsx";
 import CustodianProject from "./pages/projects/CustodianProject.tsx";
+import WhistleblowerProject from "./pages/projects/WhistleblowerProject.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -20,6 +21,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="projects">
             <Route index element={<Projects />} />
             <Route path="custodian" element={<CustodianProject />} />
+            <Route path="whistleblower" element={<WhistleblowerProject />} />
           </Route>
         </Route>
       </Routes>
