@@ -30,7 +30,7 @@ export const ProjectHeader = ({ title, tags }: ProjectHeaderProps) => {
 
 export const ProjectHighlight = ({ text }: { text: string }) => {
   return (
-    <div className="text-center p-4 sm:p-12 text-lg md:mx-auto max-w-prose">
+    <div className="md:text-center p-4 sm:p-12 text-lg md:mx-auto max-w-prose">
       <p>{text}</p>
     </div>
   )
