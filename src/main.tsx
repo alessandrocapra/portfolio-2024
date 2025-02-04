@@ -9,6 +9,7 @@ import Projects from "./pages/projects/Projects.tsx";
 import Layout from "./layouts/PageLayout.tsx";
 import CustodianProject from "./pages/projects/CustodianProject.tsx";
 import WhistleblowerProject from "./pages/projects/WhistleblowerProject.tsx";
+import { GamifiedRespiratoryExercisesProject } from "./pages/projects/GamifiedRespiratoryExercisesProject.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -22,6 +23,7 @@ createRoot(document.getElementById("root")!).render(
             <Route index element={<Projects />} />
             <Route path="custodian" element={<CustodianProject />} />
             <Route path="whistleblower" element={<WhistleblowerProject />} />
+            <Route path="gamified-respiratory-exercises" element={<GamifiedRespiratoryExercisesProject />} />
           </Route>
         </Route>
       </Routes>

@@ -1,4 +1,5 @@
 import { PropsWithChildren } from "react"
+import { twMerge } from "tailwind-merge"
 
 const PillContainer = ({ children }: PropsWithChildren) => {
   return <div className="flex flex-wrap gap-3">{children}</div>
@@ -36,4 +37,10 @@ export const ProjectHighlight = ({ text }: { text: string }) => {
   )
 }
 
-export const SectionTitle = (({ title }: { title: string }) => <h3 className="text-2xl font-medium">{title}</h3>)
+export const SectionTitle = (({ children }: PropsWithChildren) => <h3 className="text-2xl font-medium">{children}</h3>)
+
+export const NiceInlineLink = (({ children, to }: PropsWithChildren<{ to: string }>) => <a href={to} className=
+  "text-green-600 relative after:absolute after:bg-green-500 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:duration-400"
+>{children}</a>)
+
+export const BulletList = (({ children, className }: PropsWithChildren<{ className?: string }>) => <ul className={twMerge("list-disc list-inside", className)}>{children}</ul>)
