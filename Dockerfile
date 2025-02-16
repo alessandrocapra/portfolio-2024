@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
   && rm -rf /var/lib/apt/lists/*
 
 # Enable pnpm
-RUN corepack enableRUN npm install -g corepack@latest && \
+RUN npm install -g corepack@latest && \
   corepack enable && \
   corepack prepare pnpm@latest --activate && corepack prepare pnpm@latest --activate
 
