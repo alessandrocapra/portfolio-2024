@@ -3,12 +3,14 @@ FROM node:18-bookworm AS builder
 
 # Install system dependencies for sharp (image optimization)
 RUN apt-get update && apt-get install -y \
-    build-essential \
-    libvips-dev \
-    && rm -rf /var/lib/apt/lists/*
+  build-essential \
+  libvips-dev \
+  && rm -rf /var/lib/apt/lists/*
 
 # Enable pnpm
-RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN npm install -g corepack@latest && \
+  corepack enable && \
+  corepack prepare pnpm@latest --activate
 
 WORKDIR /app
 
