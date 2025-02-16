@@ -2,7 +2,13 @@ import { PropsWithChildren } from "react"
 
 export const OneColumnSection = ({ children, position = 'center' }: PropsWithChildren<{ position?: 'start' | 'center' | 'end' }>) => {
   return (
-    <section className={`flex flex-col justify-center md:items-center py-4 sm:py-8 lg:max-w-prose ${position === 'center' ? 'lg:mx-auto' : position === 'start' ? 'lg:ml-0' : 'lg:ml-auto lg:mr-0'}`}>{children}</section>
+    <section className={`flex flex-col justify-center py-4 sm:py-8 lg:max-w-prose ${
+      position === 'center' 
+        ? 'md:items-center lg:mx-auto text-left' 
+        : position === 'start' 
+          ? 'md:items-start lg:ml-0 text-left' 
+          : 'md:items-end lg:ml-auto lg:mr-0 text-right'
+    }`}>{children}</section>
   )
 }
 
