@@ -1,42 +1,47 @@
+import AnimatedPage from "./components/AnimatedPage";
 
 function App() {
   return (
-    <div className="flex flex-col gap-8 sm:gap-12">
-      <div className="sm:flex sm:flex-row-reverse sm:gap-8">
-        <div className="sm:w-3/4 sm:flex sm:flex-col sm:justify-center">
-          <h1 className="font-semibold mb-4">Alessandro Capra</h1>
-          <div className="text-md max-w-prose">
-            <p>
-              I'm a senior frontend engineer from Italy. I've lived in Germany, Finland and currently living in the Netherlands.
-            </p>
-            <p>
-              I strive to <span className="font-bold">write code that turns into value</span>, both for users and the business
-            </p>
+    <AnimatedPage>
+      <div className="flex flex-col gap-8 sm:gap-12">
+        <div className="flex flex-col md:flex-row sm:gap-8 items-center">
+          <div className="flex-none w-32 h-32 sm:w-48 sm:h-48 rounded-full overflow-hidden mx-auto sm:mx-0">
+            <img
+              src='/images/hike-01.jpeg'
+              alt='Hiking in the mountains'
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+          <div className="sm:w-3/4 sm:flex sm:flex-col sm:justify-center">
+            <div className="text-md mt-4 sm:mt-0">
+              <p>I'm Alessandro, a senior frontend engineer from Italy, now based in the Netherlands.</p>
+              <p>With a background in UX design before transitioning to engineering, I've developed a comprehensive view of product development. This combination has proven invaluable in my work, since I can understand the business/user needs and the technical constraints when building products.</p>
+              <p>I thrive on taking ownership of projects and naturally connect with cross-functional teams - abilities I've strengthened both through a Product Owner course and years of collaborative work.</p>
+            </div>
           </div>
         </div>
-        <img src='/images/hike-01.jpeg' alt='Me hiking in the mountains' className="rounded-lg w-full h-auto object-cover sm:w-1/4" />
+        <div>
+          <h2 className="font-mono pb-4">TLDR;</h2>
+          <ul className="list-disc list-inside space-y-3">
+            <li>
+              <span className="font-semibold">Frontend engineer</span> | 7+ YOE
+            </li>
+            <li>
+              Experienced in crafting web (<span className="text-gray-900">React, NextJS</span>) and mobile (<span className="text-gray-900">React Native</span>) experiences
+            </li>
+            <li>
+              Comfortable in both <span className="text-gray-900">startup chaos</span> and <span className="text-gray-900">corporate structure</span>; from greenfield projects to maintaining complex legacy systems
+            </li>
+            <li>
+              Focused on <span className="font-semibold">reducing complexity</span>: from avoiding overengineered solutions to finding simpler ways to achieve business goals
+            </li>
+            <li>
+              Tech enthusiast always eager to explore new tools and approaches
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h2 className="font-mono pb-4">TLDR;</h2>
-        <ul className="list-disc list-inside space-y-3">
-          <li>
-            <span className="font-semibold">Frontend engineer</span> | 7+ YOE
-          </li>
-          <li>
-            Experienced in crafting web (<span className="text-gray-900">React, NextJS</span>) and mobile (<span className="text-gray-900">React Native</span>) experiences
-          </li>
-          <li>
-            Comfortable in both <span className="text-gray-900">startup chaos</span> and <span className="text-gray-900">corporate structure</span>; from greenfield projects to maintaining complex legacy systems
-          </li>
-          <li>
-            Focused on <span className="font-semibold">reducing complexity</span>: from avoiding overengineered solutions to finding simpler ways to achieve business goals
-          </li>
-          <li>
-            Tech enthusiast always eager to explore new tools and approaches
-          </li>
-        </ul>
-      </div>
-    </div>
+    </AnimatedPage>
   );
 }
 
