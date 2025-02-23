@@ -20,14 +20,14 @@ export default function WhistleblowerProject() {
 
         <ScrollReveal direction="right">
           <MultipleColumnsSection>
-            <div className="lg:w-1/2 max-w-prose">
+            <div className=" max-w-prose">
               <SectionTitle>Concept</SectionTitle>
               <p>
                 A whistleblower is <span className="italic">"one who reveals wrongdoing within an organization to the public or to those in positions of authority"</span>. In order to allow employees to freely and safely raise their voice if they witness misbehaviors inside an organization, a proper platform and workflow needs to be embedded within the existing system.
               </p>
               <p>My role in this project was to gather business requirements from stakeholders, discuss and redefine them through low-fidelity wireframes. Lastly, I delivered the final UI, focusing on the handoff to developers as well (from Sketch to Zeplin).</p>
             </div>
-            <div className="relative overflow-y-hidden lg:w-1/2">
+            <div className="relative overflow-y-hidden">
               <img className="rounded w-full h-full object-contain lg:max-lg:object-left lg:max-lg:scale-125 lg:max-lg:translate-x-1/4 lg:max-lg:translate-y-[10%]" src="/images/projects/whistleblower/whistleblower-overview.png" />
             </div>
           </MultipleColumnsSection>

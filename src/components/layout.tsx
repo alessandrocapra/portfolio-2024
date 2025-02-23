@@ -1,4 +1,25 @@
 import { PropsWithChildren } from "react"
+import { twMerge } from 'tailwind-merge';
+
+interface MultipleColumnsSectionProps {
+  children: React.ReactNode;
+  contentVerticalAlignment?: 'start' | 'center' | 'end';
+  reverse?: boolean;
+}
+
+export function MultipleColumnsSection({ 
+  children, 
+  contentVerticalAlignment = 'center',
+  reverse = false 
+}: MultipleColumnsSectionProps) {
+  return (
+    <section className={`grid grid-cols-1 md:grid-cols-2 gap-8 py-8 items-${contentVerticalAlignment} ${
+      reverse ? 'md:flex-row-reverse' : ''
+    }`}>
+      {children}
+    </section>
+  );
+}
 
 export const OneColumnSection = ({ children, position = 'center' }: PropsWithChildren<{ position?: 'start' | 'center' | 'end' }>) => {
   return (
@@ -12,17 +33,12 @@ export const OneColumnSection = ({ children, position = 'center' }: PropsWithChi
   )
 }
 
-export const MultipleColumnsSection = ({ children, reverse }: PropsWithChildren<{ reverse?: boolean }>) => {
+export const ThreeColumnsSection = ({ 
+  children, 
+  className 
+}: PropsWithChildren<{ className?: string }>) => {
   return (
-    <section className={`lg:flex ${reverse ? 'lg:flex-row-reverse' : ''} lg:items-center gap-8 py-4 sm:py-8`}>
-      {children}
-    </section>
-  )
-}
-
-export const ThreeColumnsSection = ({ children }: PropsWithChildren) => {
-  return (
-    <section className={`lg:flex lg:items-center gap-8 py-4 sm:py-8`}>
+    <section className={twMerge(`lg:flex lg:items-center gap-8 py-4 sm:py-8`, className)}>
       {children}
     </section>
   )

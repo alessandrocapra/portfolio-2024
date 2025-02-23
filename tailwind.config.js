@@ -14,4 +14,9 @@ export default {
     },
   },
   plugins: [],
+  safelist: [
+    'items-start',
+    'items-center',
+    'items-end'
+  ],
 };

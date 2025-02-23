@@ -39,7 +39,7 @@ export const GamifiedRespiratoryExercisesProject = () => {
               </BulletList>
               <p>The recordings of the interviews were transcribed to ease the process of thematic analysis.</p>
             </article>
-            <img className="rounded lg:w-1/2 xl:w-1/3 xl:mx-auto" src="/images/projects/gamified-respiratory-exercises/user-research.jpg" />
+            <img className="rounded w-full" src="/images/projects/gamified-respiratory-exercises/user-research.jpg" />
           </MultipleColumnsSection>
         </ScrollReveal>
 
@@ -86,8 +86,8 @@ export const GamifiedRespiratoryExercisesProject = () => {
 
         <ScrollReveal direction="up">
           <MultipleColumnsSection>
-            <img className="rounded w-full lg:w-1/2 p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/technical_design.png" />
-            <img className="rounded w-full lg:w-1/2 p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/calibration.png" />
+            <img className="rounded w-full p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/technical_design.png" />
+            <img className="rounded w-full p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/calibration.png" />
           </MultipleColumnsSection>
         </ScrollReveal>
 
@@ -98,14 +98,14 @@ export const GamifiedRespiratoryExercisesProject = () => {
               <p>Several sensors allow to measure breath, such as infrared sensors to sense chest movements, wind sensors, anemometers and many others discussed in my thesis. The requirements for the project included the measurement of direction, strenght and duration of the breathing pattern.</p>
               <p>Eventually, the choice fell on the MPXV7002DP differential pressure sensor, given its reliability, speed and fulfilment of all the aforementioned requirements.</p>
             </article>
-            <img className="rounded w-full lg:w-1/2 p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/master-thesis-schema.png" />
+            <img className="rounded w-full p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/master-thesis-schema.png" />
           </MultipleColumnsSection>
         </ScrollReveal>
 
         <ScrollReveal direction="up">
           <MultipleColumnsSection>
-            <img className="rounded w-full lg:w-1/2 p-4 lg:p-8 lg:max-h-[400px] object-contain" src="/images/projects/gamified-respiratory-exercises/master-thesis-circuit.png" />
-            <img className="rounded w-full lg:w-1/2 p-4 lg:p-8 lg:max-h-[400px] object-contain" src="/images/projects/gamified-respiratory-exercises/master-thesis-casing.png" />
+            <img className="rounded w-full p-4 lg:p-8 object-contain" src="/images/projects/gamified-respiratory-exercises/master-thesis-circuit.png" />
+            <img className="rounded w-full p-4 lg:p-8 object-contain" src="/images/projects/gamified-respiratory-exercises/master-thesis-casing.png" />
           </MultipleColumnsSection>
         </ScrollReveal>
 
@@ -119,8 +119,8 @@ export const GamifiedRespiratoryExercisesProject = () => {
 
         <ScrollReveal direction="up">
           <MultipleColumnsSection>
-            <img className="rounded w-full lg:w-1/2 p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/master-thesis-training.png" />
-            <img className="rounded w-full lg:w-1/2 p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/master-thesis-ranking.png" />
+            <img className="rounded w-full p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/master-thesis-training.png" />
+            <img className="rounded w-full p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/master-thesis-ranking.png" />
           </MultipleColumnsSection>
         </ScrollReveal>
 

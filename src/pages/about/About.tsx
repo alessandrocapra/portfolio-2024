@@ -25,8 +25,8 @@ export default function About() {
             <p>As you can see from the list above, I have been living, studying and sharing experiences with people from all over the world, so I understand cultural differences well. I have come to realise the importance of these experiences for my career, as they allowed me to adapt well in a multicultural team.</p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row-reverse md:items-center md:justify-between gap-8 md:space-y-16">
-          <div className="max-w-prose md:w-1/2">
+        <div className="flex flex-col xl:flex-row-reverse xl:items-center xl:justify-between gap-8 md:space-y-16">
+          <div className="max-w-prose xl:w-1/2">
             <h2>Passions and interests</h2>
             <p>Apart from building user interfaces, I also have other interests!</p>
             <ul className="list-inside space-y-4">
@@ -37,7 +37,7 @@ export default function About() {
               <li><span className="font-bold">🌍 Travel</span>: as almost everybody else, I want to discover new places and how differently people live compared to our culture. Last trip to Japan was one of my favourite ever, I loved how tradition and modernity are in such symbiosis.</li>
             </ul>
           </div>
-          <div className="md:w-1/2">
+          <div className="xl:w-1/2">
             <div className="columns-2 md:columns-3 gap-4 md:gap-12 space-y-4 md:space-y-12">
               {images.map((image) => (
                 <div key={image.id} className="break-inside-avoid mb-4">
