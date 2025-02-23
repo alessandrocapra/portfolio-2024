@@ -1,4 +1,5 @@
 import { NavLink, NavLinkProps, Outlet } from "react-router";
+import { AnimatePresence } from "framer-motion";
 
 const CustomNavLink = ({ children, ...props }: NavLinkProps) => {
   return (
@@ -32,7 +33,9 @@ const Layout = () => {
         </div>
       </header>
       <main className="container mx-auto px-4 pt-20 min-h-[calc(100vh-4rem)]">
-        <Outlet />
+        <AnimatePresence mode="wait">
+          <Outlet />
+        </AnimatePresence>
       </main>
       <footer className="w-full bg-white border-t">
         <div className="container mx-auto px-4 py-5 text-center text-gray-400 text-sm">
