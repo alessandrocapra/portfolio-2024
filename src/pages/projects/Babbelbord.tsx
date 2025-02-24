@@ -8,7 +8,7 @@ import { ProjectImage } from "../../components/images";
 export default function Babbelbord() {
   return (
     <AnimatedPage>
-      <div>
+      <div className="text-gray-900 dark:text-gray-300">
         <ProjectHeader title='Babbelbord' tags={['User research', 'Prototyping', 'Development']} />
 
         <ScrollReveal>
@@ -66,21 +66,21 @@ export default function Babbelbord() {
             <ProjectImage
               src="/images/projects/babbelbord/explore.png"
               alt="Explore feature"
-              aspectRatio="4/3"
+              aspectRatio="1/1"
             />
           </ScrollReveal>
           <ScrollReveal direction="up">
             <ProjectImage
               src="/images/projects/babbelbord/discuss.png"
               alt="Discussion feature"
-              aspectRatio="4/3"
+              aspectRatio="1/1"
             />
           </ScrollReveal>
           <ScrollReveal direction="right">
             <ProjectImage
               src="/images/projects/babbelbord/cards.png"
               alt="Cards feature"
-              aspectRatio="4/3"
+              aspectRatio="1/1"
             />
           </ScrollReveal>
         </ThreeColumnsSection>
@@ -199,7 +199,8 @@ export default function Babbelbord() {
           <OneColumnSection>
             <div className="max-w-prose">
               <SectionTitle>Results</SectionTitle>
-              <BulletList className="py-8">
+              <p>Overall, these were the main findings:</p>
+              <BulletList>
                 <li>Given limited cognitive abilities, removing many gamified elements to simplify. Revising winning mechanism from collecting cards to reach points could be easier, according to the person organising the activities at the revalidation centre.</li>
                 <li>Some remarks on the dimension and robustness of the materials. For instance, we were using a normal die for testing purposes, but different interviewees argued that it was too small to be handled properly by patients. The same goes for game elements, such as the board itself and the squares that compose it: they should be bigger in order to be easily understood and handled by the players.</li>
                 <li>Formulation of the questions that should trigger memories. Indeed, some of them are quite complex and long, making it difficult for the patients to process properly. Therefore, we will have to rephrase them in order to be shorter, avoiding using general terms such as "childhood" but being more specific by providing a range age.</li>

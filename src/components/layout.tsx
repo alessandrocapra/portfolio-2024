@@ -23,12 +23,12 @@ export function MultipleColumnsSection({
 
 export const OneColumnSection = ({ children, position = 'center' }: PropsWithChildren<{ position?: 'start' | 'center' | 'end' }>) => {
   return (
-    <section className={`flex flex-col justify-center py-4 sm:py-8 lg:max-w-prose ${
+    <section className={`flex flex-col py-4 sm:py-8 ${
       position === 'center' 
-        ? 'md:items-center lg:mx-auto text-left' 
+        ? 'items-center lg:max-w-prose mx-auto text-left' 
         : position === 'start' 
-          ? 'md:items-start lg:ml-0 text-left' 
-          : 'md:items-end lg:ml-auto lg:mr-0 text-right'
+          ? 'items-start lg:ml-0 text-left' 
+          : 'items-end lg:ml-auto lg:mr-0 text-right'
     }`}>{children}</section>
   )
 }
@@ -38,7 +38,7 @@ export const ThreeColumnsSection = ({
   className 
 }: PropsWithChildren<{ className?: string }>) => {
   return (
-    <section className={twMerge(`lg:flex lg:items-center gap-8 py-4 sm:py-8`, className)}>
+    <section className={twMerge(`grid grid-cols-1 lg:grid-cols-3 gap-8 py-4 sm:py-8`, className)}>
       {children}
     </section>
   )

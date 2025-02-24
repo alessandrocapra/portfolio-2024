@@ -1,9 +1,10 @@
 interface BackgroundImageProps {
   src: string;
   hasOverlay?: boolean;
+  priority?: boolean;
 }
 
-export const BackgroundImage = ({ src, hasOverlay = true }: BackgroundImageProps) => {
+export const BackgroundImage = ({ src, hasOverlay = true, priority = false }: BackgroundImageProps) => {
   return (
     <div
       className="absolute inset-0 rounded-lg bg-cover bg-center"
@@ -12,7 +13,7 @@ export const BackgroundImage = ({ src, hasOverlay = true }: BackgroundImageProps
       }}
     >
       {hasOverlay && (
-        <div className="absolute inset-0 bg-black/20 rounded-lg" />
+        <div className="absolute inset-0 bg-black/40 rounded-lg" />
       )}
     </div>
   );

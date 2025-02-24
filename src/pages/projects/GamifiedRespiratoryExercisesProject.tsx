@@ -3,11 +3,12 @@ import { OneColumnSection, MultipleColumnsSection } from "../../components/layou
 import { BulletList, NiceInlineLink, ProjectHeader, ProjectHighlight, SectionTitle } from "../../components/projects"
 import AnimatedPage from "../../components/AnimatedPage"
 import ScrollReveal from "../../components/ScrollReveal"
+import { ProjectImage } from "../../components/images"
 
 export const GamifiedRespiratoryExercisesProject = () => {
   return (
     <AnimatedPage>
-      <div>
+      <div className="text-gray-900 dark:text-gray-300">
         <ProjectHeader title='Gamified respiratory exercises' tags={['UX Design', 'Game Design', 'Hardware', 'Development']} />
         
         <ScrollReveal>
@@ -39,7 +40,11 @@ export const GamifiedRespiratoryExercisesProject = () => {
               </BulletList>
               <p>The recordings of the interviews were transcribed to ease the process of thematic analysis.</p>
             </article>
-            <img className="rounded w-full" src="/images/projects/gamified-respiratory-exercises/user-research.jpg" />
+            <ProjectImage
+              src="/images/projects/gamified-respiratory-exercises/user-research.jpg"
+              alt="User research"
+              hasShadow
+            />
           </MultipleColumnsSection>
         </ScrollReveal>
 
@@ -47,11 +52,11 @@ export const GamifiedRespiratoryExercisesProject = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 lg:gap-8 py-4 lg:py-8 divid">
             <article>
               <h3 className="text-xl font-medium">Children</h3>
-              <p className="text-gray-500 md:text-base my-0">This user group was nearly impossible to interview, given the cognitive impairment that many subjects exhibited. For this reason, the most interesting insights provided by this group have been collected during the testing/observation phase.</p>
+              <p className="text-gray-500 dark:text-gray-400 md:text-base my-0">This user group was nearly impossible to interview, given the cognitive impairment that many subjects exhibited. For this reason, the most interesting insights provided by this group have been collected during the testing/observation phase.</p>
             </article>
             <article>
               <h3 className="text-xl font-medium">Therapists</h3>
-              <BulletList className="text-gray-500 md:[&>li]:text-base">
+              <BulletList className="text-gray-500 dark:text-gray-400 md:[&>li]:text-base">
                 <li>home training is ideal: safe without therapist assistance, gamification as essential element for retention.</li>
                 <li>children are busy, motivation to exercise at home is low.</li>
                 <li>therapists need control over the therapy: weekly planning of exercises, ability to change settings to keep children challenged and calibration of breath function.</li>
@@ -61,7 +66,7 @@ export const GamifiedRespiratoryExercisesProject = () => {
             </article>
             <article>
               <h3 className="text-xl font-medium">Parents</h3>
-              <BulletList className="text-gray-500 md:[&>li]:text-base">
+              <BulletList className="text-gray-500 dark:text-gray-400 md:[&>li]:text-base">
                 <li>lack of motivation: given the children's busy schedule, not much effort is put in the exercises that should be carried out at home.</li>
                 <li>autonomy: children are dependent on their parents for most tasks. However, videogames offer them a sense of control over a virtual world.</li>
                 <li>preference for group therapy: children seem more engaged when they exercise with others.</li>
@@ -86,8 +91,16 @@ export const GamifiedRespiratoryExercisesProject = () => {
 
         <ScrollReveal direction="up">
           <MultipleColumnsSection>
-            <img className="rounded w-full p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/technical_design.png" />
-            <img className="rounded w-full p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/calibration.png" />
+            <ProjectImage
+              src="/images/projects/gamified-respiratory-exercises/technical_design.png"
+              alt="Technical design"
+              hasShadow
+            />
+            <ProjectImage
+              src="/images/projects/gamified-respiratory-exercises/calibration.png"
+              alt="Calibration screen"
+              hasShadow
+            />
           </MultipleColumnsSection>
         </ScrollReveal>
 
@@ -98,14 +111,26 @@ export const GamifiedRespiratoryExercisesProject = () => {
               <p>Several sensors allow to measure breath, such as infrared sensors to sense chest movements, wind sensors, anemometers and many others discussed in my thesis. The requirements for the project included the measurement of direction, strenght and duration of the breathing pattern.</p>
               <p>Eventually, the choice fell on the MPXV7002DP differential pressure sensor, given its reliability, speed and fulfilment of all the aforementioned requirements.</p>
             </article>
-            <img className="rounded w-full p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/master-thesis-schema.png" />
+            <ProjectImage
+              src="/images/projects/gamified-respiratory-exercises/master-thesis-schema.png"
+              alt="Hardware schema"
+              hasShadow
+            />
           </MultipleColumnsSection>
         </ScrollReveal>
 
         <ScrollReveal direction="up">
           <MultipleColumnsSection>
-            <img className="rounded w-full p-4 lg:p-8 object-contain" src="/images/projects/gamified-respiratory-exercises/master-thesis-circuit.png" />
-            <img className="rounded w-full p-4 lg:p-8 object-contain" src="/images/projects/gamified-respiratory-exercises/master-thesis-casing.png" />
+            <ProjectImage
+              src="/images/projects/gamified-respiratory-exercises/master-thesis-circuit.png"
+              alt="Circuit design"
+              hasShadow
+            />
+            <ProjectImage
+              src="/images/projects/gamified-respiratory-exercises/master-thesis-casing.png"
+              alt="Hardware casing"
+              hasShadow
+            />
           </MultipleColumnsSection>
         </ScrollReveal>
 
@@ -119,8 +144,16 @@ export const GamifiedRespiratoryExercisesProject = () => {
 
         <ScrollReveal direction="up">
           <MultipleColumnsSection>
-            <img className="rounded w-full p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/master-thesis-training.png" />
-            <img className="rounded w-full p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/master-thesis-ranking.png" />
+            <ProjectImage
+              src="/images/projects/gamified-respiratory-exercises/master-thesis-training.png"
+              alt="Training mode"
+              hasShadow
+            />
+            <ProjectImage
+              src="/images/projects/gamified-respiratory-exercises/master-thesis-ranking.png"
+              alt="Ranking screen"
+              hasShadow
+            />
           </MultipleColumnsSection>
         </ScrollReveal>
 
@@ -136,7 +169,7 @@ export const GamifiedRespiratoryExercisesProject = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <article>
               <h3 className="text-xl font-medium">Usability issues</h3>
-              <BulletList className="text-gray-500 md:[&>li]:text-base">
+              <BulletList className="text-gray-500 dark:text-gray-400 md:[&>li]:text-base">
                 <li>Nowadays many video-game genres exist, and several were considered as candidates for this project. Given the limited resources available, the feedback from the therapists and the parents helped to steer the choice towards a 2D platformer.</li>
                 <li>The reasons behind this choice consisted on the children being already familiar with this type of games (according to parents and therapists).</li>
                 <li>A training mode is offered before the game starts, in order to practice with the controls and have some additional tips on when the player should breath in and out without affecting the player's ranking.</li>
@@ -145,7 +178,7 @@ export const GamifiedRespiratoryExercisesProject = () => {
 
             <article>
               <h3 className="text-xl font-medium">Gamification elements</h3>
-              <BulletList className="text-gray-500 md:[&>li]:text-base">
+              <BulletList className="text-gray-500 dark:text-gray-400 md:[&>li]:text-base">
                 <li>The testing session confirmed the value of including gamification elements within the game.</li>
                 <li>The ranking system was highly effective, since many participants wanted to play another game once they saw that their friends previously reached a higher score.</li>
                 <li>This, in return, translates to a increased retention and engagement with the game and, consequently, with the breathing exercises.</li>
@@ -154,7 +187,7 @@ export const GamifiedRespiratoryExercisesProject = () => {
 
             <article>
               <h3 className="text-xl font-medium">Level and hardware design</h3>
-              <BulletList className="text-gray-500 md:[&>li]:text-base">
+              <BulletList className="text-gray-500 dark:text-gray-400 md:[&>li]:text-base">
                 <li>The game was quite difficult to play according to the children. The main issue seemed to be the close proximity of breathing actions to control the game character, therefore making the participants pretty tired.</li>
                 <li>The therapists suggested to insert more pauses between the actions required to control the game to avoid fatigue.</li>
                 <li>The filter attached to the tube where the user needs to exhale / inhale could be redesigned for a more comfortable gaming experience.</li>
@@ -167,7 +200,11 @@ export const GamifiedRespiratoryExercisesProject = () => {
 
         <ScrollReveal direction="right">
           <OneColumnSection>
-            <img className="rounded w-full p-4 lg:p-8" src="/images/projects/gamified-respiratory-exercises/master-thesis-settings.png" />
+            <ProjectImage
+              src="/images/projects/gamified-respiratory-exercises/master-thesis-settings.png"
+              alt="Settings screen"
+              hasShadow
+            />
           </OneColumnSection>
         </ScrollReveal>
 
