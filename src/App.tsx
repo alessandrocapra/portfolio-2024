@@ -1,17 +1,15 @@
 import AnimatedPage from "./components/AnimatedPage";
+import { ProfileImage } from "./components/images";
 
 function App() {
   return (
     <AnimatedPage>
       <div className="flex flex-col gap-8 sm:gap-12">
         <div className="flex flex-col md:flex-row sm:gap-8 items-center">
-          <div className="flex-none w-32 h-32 sm:w-48 sm:h-48 rounded-full overflow-hidden mx-auto sm:mx-0">
-            <img
-              src='/images/hike-01.jpeg'
-              alt='Hiking in the mountains'
-              className="w-full h-full object-cover object-center"
-            />
-          </div>
+          <ProfileImage
+            src='/images/hike-01.jpeg'
+            alt='Hiking in the mountains'
+          />
           <div className="sm:w-3/4 sm:flex sm:flex-col sm:justify-center">
             <div className="text-md mt-4 sm:mt-0">
               <p>I'm Alessandro, a senior frontend engineer from Italy, now based in the Netherlands.</p>

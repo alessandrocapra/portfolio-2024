@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import AnimatedPage from "../../components/AnimatedPage";
+import { BackgroundImage } from "../../components/images";
 
 type ProjectCardProps = {
   title: string, url: string, bgImageUrl?: string
@@ -13,17 +14,7 @@ const ProjectCard = ({ title, url, bgImageUrl }: ProjectCardProps) => {
         ${bgImageUrl ? 'text-white' : ''}`}
       aria-label={`View project: ${title}`}
     >
-      {bgImageUrl && (
-        <div
-          className="absolute inset-0 rounded-lg bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${bgImageUrl})`,
-          }}
-        >
-          {/* Dark overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/20 rounded-lg" />
-        </div>
-      )}
+      {bgImageUrl && <BackgroundImage src={bgImageUrl} />}
       <h2 className="relative z-10">{title}</h2>
     </Link>
   )
@@ -40,7 +31,7 @@ export default function Projects() {
           <ProjectCard title='Custodian' url='/projects/custodian' bgImageUrl={`${imagesFolder}/custodian/custodian-header.png`} />
           <ProjectCard title='Whistleblower' url='/projects/whistleblower' bgImageUrl={`${imagesFolder}/whistleblower/whistleblower-header.png`} />
           <ProjectCard title='Gamified respiratory exercises' url='/projects/gamified-respiratory-exercises' bgImageUrl={`${imagesFolder}/gamified-respiratory-exercises/master-thesis-header.png`} />
-          <ProjectCard title='Babbelbord' url='/projects/babbelbord' bgImageUrl={`${imagesFolder}/babbelbord/babbelbord-header.png`} />
+          <ProjectCard title='Babbelbord' url='/projects/babbelbord' bgImageUrl={`${imagesFolder}/babbelbord/babbelbord.png`} />
           <ProjectCard title='Beathoven' url='/projects/beathoven' bgImageUrl={`${imagesFolder}/beathoven/beathoven-header.png`} />
         </div>
       </div>

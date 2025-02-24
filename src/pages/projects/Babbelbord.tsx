@@ -3,6 +3,7 @@ import { OneColumnSection, MultipleColumnsSection, ThreeColumnsSection } from ".
 import { BulletList, ProjectHeader, ProjectHighlight, SectionTitle } from "../../components/projects";
 import AnimatedPage from "../../components/AnimatedPage";
 import ScrollReveal from "../../components/ScrollReveal";
+import { ProjectImage } from "../../components/images";
 
 export default function Babbelbord() {
   return (
@@ -15,7 +16,10 @@ export default function Babbelbord() {
         </ScrollReveal>
 
         <ScrollReveal direction="up">
-          <img className="rounded-lg" src="/images/projects/babbelbord/babbelbord.png" />
+          <ProjectImage
+            src="/images/projects/babbelbord/babbelbord.png"
+            alt="Babbelbord overview"
+          />
         </ScrollReveal>
 
         <ScrollReveal direction="right">
@@ -59,13 +63,25 @@ export default function Babbelbord() {
 
         <ThreeColumnsSection className="lg:items-stretch">
           <ScrollReveal direction="left">
-            <img className="rounded-lg w-full h-full object-cover" src="/images/projects/babbelbord/explore.png" />
+            <ProjectImage
+              src="/images/projects/babbelbord/explore.png"
+              alt="Explore feature"
+              aspectRatio="4/3"
+            />
           </ScrollReveal>
           <ScrollReveal direction="up">
-            <img className="rounded-lg w-full h-full object-cover" src="/images/projects/babbelbord/discuss.png" />
+            <ProjectImage
+              src="/images/projects/babbelbord/discuss.png"
+              alt="Discussion feature"
+              aspectRatio="4/3"
+            />
           </ScrollReveal>
           <ScrollReveal direction="right">
-            <img className="rounded-lg w-full h-full object-cover" src="/images/projects/babbelbord/cards.png" />
+            <ProjectImage
+              src="/images/projects/babbelbord/cards.png"
+              alt="Cards feature"
+              aspectRatio="4/3"
+            />
           </ScrollReveal>
         </ThreeColumnsSection>
 
@@ -85,27 +101,58 @@ export default function Babbelbord() {
 
         <ThreeColumnsSection className="lg:items-stretch">
           <ScrollReveal direction="left">
-            <img className="rounded-lg w-full h-full object-cover shadow-lg" src="/images/projects/babbelbord/game-idea-1.png" />
+            <ProjectImage
+              src="/images/projects/babbelbord/game-idea-1.png"
+              alt="Game idea 1"
+              aspectRatio="1/1"
+              hasShadow
+            />
           </ScrollReveal>
           <ScrollReveal direction="up">
-            <img className="rounded-lg w-full h-full object-cover shadow-lg" src="/images/projects/babbelbord/game-idea-2.png" />
+            <ProjectImage
+              src="/images/projects/babbelbord/game-idea-2.png"
+              alt="Game idea 2"
+              aspectRatio="1/1"
+              hasShadow
+            />
           </ScrollReveal>
           <ScrollReveal direction="right">
-            <img className="rounded-lg w-full h-full object-cover shadow-lg" src="/images/projects/babbelbord/game-idea-3.png" />
+            <ProjectImage
+              src="/images/projects/babbelbord/game-idea-3.png"
+              alt="Game idea 3"
+              aspectRatio="1/1"
+              hasShadow
+            />
           </ScrollReveal>
         </ThreeColumnsSection>
 
         <ScrollReveal direction="up">
           <MultipleColumnsSection>
-            <img className="rounded-lg w-full object-cover shadow-lg" src="/images/projects/babbelbord/wireframe.png" />
-            <img className="rounded-lg w-full object-cover shadow-lg" src="/images/projects/babbelbord/select-players.png" />
+            <ProjectImage
+              src="/images/projects/babbelbord/wireframe.png"
+              alt="Wireframe"
+              hasShadow
+            />
+            <ProjectImage
+              src="/images/projects/babbelbord/select-players.png"
+              alt="Select players screen"
+              hasShadow
+            />
           </MultipleColumnsSection>
         </ScrollReveal>
 
         <ScrollReveal direction="down">
           <MultipleColumnsSection>
-            <img className="rounded-lg w-full object-cover shadow-lg" src="/images/projects/babbelbord/new-game.png" />
-            <img className="rounded-lg w-full object-cover shadow-lg" src="/images/projects/babbelbord/question.png" />
+            <ProjectImage
+              src="/images/projects/babbelbord/new-game.png"
+              alt="New game screen"
+              hasShadow
+            />
+            <ProjectImage
+              src="/images/projects/babbelbord/question.png"
+              alt="Question screen"
+              hasShadow
+            />
           </MultipleColumnsSection>
         </ScrollReveal>
 
@@ -140,7 +187,11 @@ export default function Babbelbord() {
                 <li>Interaction between technology and patients</li>
               </BulletList>
             </div>
-            <img className="rounded-lg w-full object-cover shadow-lg" src="/images/projects/babbelbord/testing.png" />
+            <ProjectImage
+              src="/images/projects/babbelbord/testing.png"
+              alt="Testing session"
+              hasShadow
+            />
           </MultipleColumnsSection>
         </ScrollReveal>
 
@@ -156,7 +207,6 @@ export default function Babbelbord() {
             </div>
           </OneColumnSection>
         </ScrollReveal>
-
 
         <ScrollReveal>
           <ContactForm />
