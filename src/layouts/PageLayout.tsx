@@ -1,5 +1,6 @@
-import { NavLink, NavLinkProps, Outlet } from "react-router";
+import { NavLink, NavLinkProps, Outlet, useLocation } from "react-router";
 import { AnimatePresence } from "framer-motion";
+import { useEffect } from "react";
 
 const CustomNavLink = ({ children, ...props }: NavLinkProps) => {
   return (
@@ -18,6 +19,12 @@ const CustomNavLink = ({ children, ...props }: NavLinkProps) => {
 };
 
 const Layout = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]); // Scroll to top when pathname changes
+
   return (
     <div className="min-h-screen">
       <header className="fixed top-0 w-full bg-white shadow-sm z-50">
