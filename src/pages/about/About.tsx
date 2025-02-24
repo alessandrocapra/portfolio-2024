@@ -1,4 +1,5 @@
 import AnimatedPage from "../../components/AnimatedPage";
+import { ContactForm } from "../../components/ContactForm";
 import ScrollReveal from "../../components/ScrollReveal";
 import { GalleryImage } from "../../components/images";
 import { motion } from "framer-motion";
@@ -101,6 +102,10 @@ export default function About() {
               </motion.div>
             </div>
           </div>
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <ContactForm />
         </ScrollReveal>
       </div>
     </AnimatedPage>
