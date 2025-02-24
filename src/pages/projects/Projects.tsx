@@ -22,7 +22,7 @@ const ProjectCard = ({ title, url, bgImageUrl }: ProjectCardProps) => {
         ${bgImageUrl ? 'text-white' : 'text-gray-900 dark:text-gray-100'}`}
       aria-label={`View project: ${title}`}
     >
-      {bgImageUrl && <BackgroundImage src={bgImageUrl} priority />}
+      {bgImageUrl && <BackgroundImage src={bgImageUrl} />}
       <h2 className="relative z-10">{title}</h2>
     </Link>
   )

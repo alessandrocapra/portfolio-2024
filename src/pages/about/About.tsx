@@ -94,7 +94,6 @@ export default function About() {
                     <GalleryImage
                       src={image.url}
                       alt={image.alt}
-                      aspectRatio={image.aspectRatio}
                       position={image.position}
                     />
                   </motion.div>
