@@ -12,11 +12,11 @@ export const ProjectImage = ({
   hasShadow = false 
 }: ProjectImageProps) => {
   return (
-    <div className={`aspect-[${aspectRatio}]`}>
+    <div className={`md:aspect-[${aspectRatio}]`}>
       <img
         src={src}
         alt={alt}
-        className={`rounded-lg w-full h-full object-cover ${hasShadow ? 'shadow-lg' : ''}`}
+        className={`rounded-lg w-full object-contain md:object-cover ${hasShadow ? 'shadow-lg' : ''}`}
         loading="lazy"
         decoding="async"
       />

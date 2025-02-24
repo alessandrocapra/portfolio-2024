@@ -3,11 +3,12 @@ import { OneColumnSection, MultipleColumnsSection } from "../../components/layou
 import { ProjectHeader, ProjectHighlight, SectionTitle } from "../../components/projects";
 import AnimatedPage from "../../components/AnimatedPage";
 import ScrollReveal from "../../components/ScrollReveal";
+import { ProjectImage } from "../../components/images";
 
 export default function WhistleblowerProject() {
   return (
     <AnimatedPage>
-      <div>
+      <div className="text-gray-900 dark:text-gray-300">
         <ProjectHeader title='Whistleblower platform' tags={['UX Design', 'UI Design']} />
         
         <ScrollReveal>
@@ -15,12 +16,15 @@ export default function WhistleblowerProject() {
         </ScrollReveal>
 
         <ScrollReveal direction="up">
-          <img className="rounded py-8" src="/images/projects/whistleblower/whistleblower-concept.png" />
+          <ProjectImage
+            src="/images/projects/whistleblower/whistleblower-concept.png"
+            alt="Whistleblower concept"
+          />
         </ScrollReveal>
 
         <ScrollReveal direction="right">
           <MultipleColumnsSection>
-            <div className=" max-w-prose">
+            <div className="max-w-prose">
               <SectionTitle>Concept</SectionTitle>
               <p>
                 A whistleblower is <span className="italic">"one who reveals wrongdoing within an organization to the public or to those in positions of authority"</span>. In order to allow employees to freely and safely raise their voice if they witness misbehaviors inside an organization, a proper platform and workflow needs to be embedded within the existing system.
@@ -28,7 +32,11 @@ export default function WhistleblowerProject() {
               <p>My role in this project was to gather business requirements from stakeholders, discuss and redefine them through low-fidelity wireframes. Lastly, I delivered the final UI, focusing on the handoff to developers as well (from Sketch to Zeplin).</p>
             </div>
             <div className="relative overflow-y-hidden">
-              <img className="rounded w-full h-full object-contain lg:max-lg:object-left lg:max-lg:scale-125 lg:max-lg:translate-x-1/4 lg:max-lg:translate-y-[10%]" src="/images/projects/whistleblower/whistleblower-overview.png" />
+              <ProjectImage
+                src="/images/projects/whistleblower/whistleblower-overview.png"
+                alt="Whistleblower overview"
+                hasShadow
+              />
             </div>
           </MultipleColumnsSection>
         </ScrollReveal>
@@ -45,11 +53,23 @@ export default function WhistleblowerProject() {
         <ScrollReveal direction="up">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
             <div className="lg:space-y-8">
-              <img className="rounded py-8 lg:py-0" src="/images/projects/whistleblower/whistleblower-wf-ui.png" />
-              <img className="rounded py-8 lg:py-0" src="/images/projects/whistleblower/whistleblower-wf.png" />
+              <ProjectImage
+                src="/images/projects/whistleblower/whistleblower-wf-ui.png"
+                alt="Whistleblower wireframes and UI"
+                hasShadow
+              />
+              <ProjectImage
+                src="/images/projects/whistleblower/whistleblower-wf.png"
+                alt="Whistleblower wireframes"
+                hasShadow
+              />
             </div>
             <div className="lg:flex lg:items-center">
-              <img className="rounded py-8 lg:py-0 w-full" src="/images/projects/whistleblower/whistleblower-ui.png" />
+              <ProjectImage
+                src="/images/projects/whistleblower/whistleblower-ui.png"
+                alt="Whistleblower UI"
+                hasShadow
+              />
             </div>
           </div>
         </ScrollReveal>

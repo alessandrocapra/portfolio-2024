@@ -4,7 +4,7 @@ import { ProfileImage } from "./components/images";
 function App() {
   return (
     <AnimatedPage>
-      <div className="flex flex-col gap-8 sm:gap-12">
+      <div className="flex flex-col gap-8 sm:gap-12 text-gray-900 dark:text-gray-300 theme-transition">
         <div className="flex flex-col md:flex-row sm:gap-8 items-center">
           <ProfileImage
             src='/images/hike-01.jpeg'
@@ -25,10 +25,10 @@ function App() {
               <span className="font-semibold">Frontend engineer</span> | 7+ YOE
             </li>
             <li>
-              Experienced in crafting web (<span className="text-gray-900">React, NextJS</span>) and mobile (<span className="text-gray-900">React Native</span>) experiences
+              Experienced in crafting web (<span>React, NextJS</span>) and mobile (<span>React Native</span>) experiences
             </li>
             <li>
-              Comfortable in both <span className="text-gray-900">startup chaos</span> and <span className="text-gray-900">corporate structure</span>; from greenfield projects to maintaining complex legacy systems
+              Comfortable in both <span>startup chaos</span> and <span>corporate structure</span>; from greenfield projects to maintaining complex legacy systems
             </li>
             <li>
               Focused on <span className="font-semibold">reducing complexity</span>: from avoiding overengineered solutions to finding simpler ways to achieve business goals

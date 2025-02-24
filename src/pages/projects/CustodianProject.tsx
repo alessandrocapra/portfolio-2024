@@ -3,11 +3,12 @@ import { OneColumnSection, MultipleColumnsSection } from "../../components/layou
 import { ProjectHeader, ProjectHighlight, SectionTitle } from "../../components/projects";
 import AnimatedPage from "../../components/AnimatedPage";
 import ScrollReveal from "../../components/ScrollReveal";
+import { ProjectImage } from "../../components/images";
 
 export default function CustodianProject() {
   return (
     <AnimatedPage>
-      <div>
+      <div className="text-gray-900 dark:text-gray-300">
         <ProjectHeader title='Crypto custodian mobile app' tags={['UX Design', 'UI Design', 'React Native']} />
 
         <ScrollReveal>
@@ -15,7 +16,10 @@ export default function CustodianProject() {
         </ScrollReveal>
 
         <ScrollReveal direction="up">
-          <img className="rounded py-8" src="/images/projects/custodian/custodian-showcase.png" />
+          <ProjectImage
+            src="/images/projects/custodian/custodian-showcase.png"
+            alt="Custodian app showcase"
+          />
         </ScrollReveal>
 
         <ScrollReveal direction="right">
@@ -25,7 +29,11 @@ export default function CustodianProject() {
               <p>This mobile app showcases the capabilities of the Quantoz Nexus API, and it is meant to be used installed and tried out by potential clients.</p>
               <p>We chose React Native as framework since we could support both Android and iOS with one unified codebase. My role in the project covered the initial requirements gathering, the creation of wireframes to discuss an initial version and improve it iteratively through several feedback sessions. Moreover, I created the screens and components in React Native, using Native Base as a UI framework to speed up development.</p>
             </div>
-            <img className="rounded-lg" src="/images/projects/custodian/custodian-concept.png" />
+            <ProjectImage
+              src="/images/projects/custodian/custodian-concept.png"
+              alt="Custodian concept"
+              hasShadow
+            />
           </MultipleColumnsSection>
         </ScrollReveal>
 
@@ -38,7 +46,11 @@ export default function CustodianProject() {
                 <p>The initial sketch shown below provided a good starting point for discussion and further definition of information architecture and user experience design. This app showcases the complete workflow of a crypto custodian use case, and can be used by a company to kickstart their own custodian project and manage the compliance and operational part through the Nexus portal.</p>
               </article>
             </div>
-            <img className="rounded-lg" src="/images/projects/custodian/custodian-wireframes.png" />
+            <ProjectImage
+              src="/images/projects/custodian/custodian-wireframes.png"
+              alt="Custodian wireframes"
+              hasShadow
+            />
           </MultipleColumnsSection>
         </ScrollReveal>
 
