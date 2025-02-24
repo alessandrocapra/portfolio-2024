@@ -11,12 +11,18 @@ export const ProjectImage = ({
   aspectRatio = '16/9',
   hasShadow = false 
 }: ProjectImageProps) => {
+  const aspectRatioClass = {
+    '16/9': 'aspect-video',
+    '4/3': 'aspect-[4/3]',
+    '1/1': 'aspect-square'
+  }[aspectRatio];
+
   return (
-    <div className={`md:aspect-[${aspectRatio}]`}>
+    <div className={`relative w-full ${aspectRatioClass}`}>
       <img
         src={src}
         alt={alt}
-        className={`rounded-lg w-full object-contain md:object-cover ${hasShadow ? 'shadow-lg' : ''}`}
+        className={`absolute inset-0 w-full h-full object-contain rounded-lg ${hasShadow ? 'shadow-lg' : ''}`}
         loading="lazy"
         decoding="async"
       />

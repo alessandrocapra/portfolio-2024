@@ -38,7 +38,7 @@ export const ThreeColumnsSection = ({
   className 
 }: PropsWithChildren<{ className?: string }>) => {
   return (
-    <section className={twMerge(`lg:flex lg:items-center gap-8 py-4 sm:py-8`, className)}>
+    <section className={twMerge(`grid grid-cols-1 lg:grid-cols-3 gap-8 py-4 sm:py-8`, className)}>
       {children}
     </section>
   )

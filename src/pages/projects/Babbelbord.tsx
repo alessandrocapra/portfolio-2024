@@ -66,21 +66,21 @@ export default function Babbelbord() {
             <ProjectImage
               src="/images/projects/babbelbord/explore.png"
               alt="Explore feature"
-              aspectRatio="4/3"
+              aspectRatio="1/1"
             />
           </ScrollReveal>
           <ScrollReveal direction="up">
             <ProjectImage
               src="/images/projects/babbelbord/discuss.png"
               alt="Discussion feature"
-              aspectRatio="4/3"
+              aspectRatio="1/1"
             />
           </ScrollReveal>
           <ScrollReveal direction="right">
             <ProjectImage
               src="/images/projects/babbelbord/cards.png"
               alt="Cards feature"
-              aspectRatio="4/3"
+              aspectRatio="1/1"
             />
           </ScrollReveal>
         </ThreeColumnsSection>
