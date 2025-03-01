@@ -8,7 +8,7 @@ import { ProjectImage } from "../../components/images";
 export default function Babbelbord() {
   return (
     <AnimatedPage>
-      <div className="text-gray-900 dark:text-gray-300">
+      <div className="text-gray-900 dark:text-gray-300 overflow-x-hidden">
         <ProjectHeader title='Babbelbord' tags={['User research', 'Prototyping', 'Development']} />
 
         <ScrollReveal>
@@ -19,6 +19,7 @@ export default function Babbelbord() {
           <ProjectImage
             src="/images/projects/babbelbord/babbelbord.png"
             alt="Babbelbord overview"
+            aspectRatio="unset"
           />
         </ScrollReveal>
 
@@ -34,56 +35,54 @@ export default function Babbelbord() {
 
         <ScrollReveal direction="left">
           <MultipleColumnsSection contentVerticalAlignment="start">
-              <article>
-                  <SectionTitle>Research</SectionTitle>
-                  <p className="font-bold">Stakeholders</p>
-                  <BulletList>
-                    <li>Relatives from Dementia patients</li>
-                    <li>Caretakers from Bruggerbosch</li>
-                    <li>People affected by dementia</li>
-                  </BulletList>
-                  <p className="font-bold">Market analysis</p>
-                  <p>Existing non-pharmaceutical solutions like life story books, online versions which can embed sounds, images and videos. We try to investigate a new solution to explore this approach even further, by also embedding gamification elements</p>
-              </article>
-              <article>
-                  <p className="font-bold">Methods</p>
-                  <p>Observations on-site (difficult to communicate with dementia patients): understanding of environment and social interactions. Interviews with healthy elderly, caregivers and relatives.</p>
+            <article>
+              <SectionTitle>Research</SectionTitle>
+              <p className="font-bold">Stakeholders</p>
+              <BulletList>
+                <li>Relatives from Dementia patients</li>
+                <li>Caretakers from Bruggerbosch</li>
+                <li>People affected by dementia</li>
+              </BulletList>
+              <p className="font-bold">Market analysis</p>
+              <p>Existing non-pharmaceutical solutions like life story books, online versions which can embed sounds, images and videos. We try to investigate a new solution to explore this approach even further, by also embedding gamification elements</p>
+            </article>
+            <article>
+              <p className="font-bold">Methods</p>
+              <p>Observations on-site (difficult to communicate with dementia patients): understanding of environment and social interactions. Interviews with healthy elderly, caregivers and relatives.</p>
 
-                  <p className="font-bold">Iterative cycle</p>
-                  <p>4 iterations in total: vision (structured brainstorming sessions to produce a lot of ideas and then combine them), prototype, evaluation.</p>
-                  <BulletList>
-                    <li>First iteration: memory card game only, with wizard of OZ testing</li>
-                    <li>Second iteration: simple paper prototype, similar to final solution</li>
-                    <li>Third iteration: Added cards to collect as points, plus special squares with different meanings. A/B testing to see which interface was clearer to use for the caregiver</li>
-                    <li>Fourth iteration: final version of prototype</li>
-                  </BulletList>
-              </article>
+              <p className="font-bold">Iterative cycle</p>
+              <p>4 iterations in total: vision (structured brainstorming sessions to produce a lot of ideas and then combine them), prototype, evaluation.</p>
+              <BulletList>
+                <li>First iteration: memory card game only, with wizard of OZ testing</li>
+                <li>Second iteration: simple paper prototype, similar to final solution</li>
+                <li>Third iteration: Added cards to collect as points, plus special squares with different meanings. A/B testing to see which interface was clearer to use for the caregiver</li>
+                <li>Fourth iteration: final version of prototype</li>
+              </BulletList>
+            </article>
           </MultipleColumnsSection>
         </ScrollReveal>
 
-        <ThreeColumnsSection className="lg:items-stretch">
-          <ScrollReveal direction="left">
+        <ScrollReveal direction="up">
+          <ThreeColumnsSection className="lg:items-stretch">
             <ProjectImage
               src="/images/projects/babbelbord/explore.png"
               alt="Explore feature"
-              aspectRatio="1/1"
+              aspectRatio="unset"
+              objectFit="cover"
             />
-          </ScrollReveal>
-          <ScrollReveal direction="up">
             <ProjectImage
               src="/images/projects/babbelbord/discuss.png"
               alt="Discussion feature"
-              aspectRatio="1/1"
+              aspectRatio="unset"
+              objectFit="cover"
             />
-          </ScrollReveal>
-          <ScrollReveal direction="right">
             <ProjectImage
               src="/images/projects/babbelbord/cards.png"
               alt="Cards feature"
-              aspectRatio="1/1"
+              aspectRatio="unset"
             />
-          </ScrollReveal>
-        </ThreeColumnsSection>
+          </ThreeColumnsSection>
+        </ScrollReveal>
 
         <ScrollReveal direction="up">
           <OneColumnSection>
@@ -99,62 +98,52 @@ export default function Babbelbord() {
           </OneColumnSection>
         </ScrollReveal>
 
-        <ThreeColumnsSection className="lg:items-stretch">
+        <MultipleColumnsSection>
           <ScrollReveal direction="left">
             <ProjectImage
               src="/images/projects/babbelbord/game-idea-1.png"
               alt="Game idea 1"
-              aspectRatio="1/1"
               hasShadow
-            />
-          </ScrollReveal>
-          <ScrollReveal direction="up">
-            <ProjectImage
-              src="/images/projects/babbelbord/game-idea-2.png"
-              alt="Game idea 2"
-              aspectRatio="1/1"
-              hasShadow
+              aspectRatio="4/3"
             />
           </ScrollReveal>
           <ScrollReveal direction="right">
             <ProjectImage
-              src="/images/projects/babbelbord/game-idea-3.png"
-              alt="Game idea 3"
-              aspectRatio="1/1"
+              src="/images/projects/babbelbord/game-idea-2.png"
+              alt="Game idea 2"
               hasShadow
+              aspectRatio="4/3"
             />
           </ScrollReveal>
-        </ThreeColumnsSection>
+        </MultipleColumnsSection>
 
-        <ScrollReveal direction="up">
-          <MultipleColumnsSection>
+        <OneColumnSection>
+          <ScrollReveal direction="left">
             <ProjectImage
               src="/images/projects/babbelbord/wireframe.png"
               alt="Wireframe"
               hasShadow
+              aspectRatio="unset"
             />
+          </ScrollReveal>
+        </OneColumnSection>
+
+        <MultipleColumnsSection>
+          <ScrollReveal direction="left">
             <ProjectImage
               src="/images/projects/babbelbord/select-players.png"
               alt="Select players screen"
               hasShadow
             />
-          </MultipleColumnsSection>
-        </ScrollReveal>
-
-        <ScrollReveal direction="down">
-          <MultipleColumnsSection>
+          </ScrollReveal>
+          <ScrollReveal direction="right">
             <ProjectImage
               src="/images/projects/babbelbord/new-game.png"
-              alt="New game screen"
+              alt="Wireframe"
               hasShadow
             />
-            <ProjectImage
-              src="/images/projects/babbelbord/question.png"
-              alt="Question screen"
-              hasShadow
-            />
-          </MultipleColumnsSection>
-        </ScrollReveal>
+          </ScrollReveal>
+        </MultipleColumnsSection>
 
         <ScrollReveal direction="left">
           <OneColumnSection>

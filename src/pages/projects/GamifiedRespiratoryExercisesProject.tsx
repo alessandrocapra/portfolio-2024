@@ -8,9 +8,9 @@ import { ProjectImage } from "../../components/images"
 export const GamifiedRespiratoryExercisesProject = () => {
   return (
     <AnimatedPage>
-      <div className="text-gray-900 dark:text-gray-300">
+      <div className="text-gray-900 dark:text-gray-300 overflow-x-hidden">
         <ProjectHeader title='Gamified respiratory exercises' tags={['UX Design', 'Game Design', 'Hardware', 'Development']} />
-        
+
         <ScrollReveal>
           <ProjectHighlight text='A custom breath-analysing hardware coupled with a videogame to encourage children affected by Duchenne Muscular Dystrophy to improve their breathing independently, outside of therapy hours.' />
         </ScrollReveal>
@@ -44,6 +44,7 @@ export const GamifiedRespiratoryExercisesProject = () => {
               src="/images/projects/gamified-respiratory-exercises/user-research.jpg"
               alt="User research"
               hasShadow
+              aspectRatio="unset"
             />
           </MultipleColumnsSection>
         </ScrollReveal>
@@ -115,6 +116,7 @@ export const GamifiedRespiratoryExercisesProject = () => {
               src="/images/projects/gamified-respiratory-exercises/master-thesis-schema.png"
               alt="Hardware schema"
               hasShadow
+              aspectRatio="4/3"
             />
           </MultipleColumnsSection>
         </ScrollReveal>
@@ -125,11 +127,13 @@ export const GamifiedRespiratoryExercisesProject = () => {
               src="/images/projects/gamified-respiratory-exercises/master-thesis-circuit.png"
               alt="Circuit design"
               hasShadow
+              aspectRatio="4/3"
             />
             <ProjectImage
               src="/images/projects/gamified-respiratory-exercises/master-thesis-casing.png"
               alt="Hardware casing"
               hasShadow
+              aspectRatio="4/3"
             />
           </MultipleColumnsSection>
         </ScrollReveal>
@@ -148,11 +152,13 @@ export const GamifiedRespiratoryExercisesProject = () => {
               src="/images/projects/gamified-respiratory-exercises/master-thesis-training.png"
               alt="Training mode"
               hasShadow
+              aspectRatio="unset"
             />
             <ProjectImage
               src="/images/projects/gamified-respiratory-exercises/master-thesis-ranking.png"
               alt="Ranking screen"
               hasShadow
+              aspectRatio="unset"
             />
           </MultipleColumnsSection>
         </ScrollReveal>
@@ -199,16 +205,17 @@ export const GamifiedRespiratoryExercisesProject = () => {
         </ScrollReveal>
 
         <ScrollReveal direction="right">
-          <OneColumnSection>
+          <MultipleColumnsSection>
             <ProjectImage
               src="/images/projects/gamified-respiratory-exercises/master-thesis-settings.png"
               alt="Settings screen"
               hasShadow
+              aspectRatio="4/3"
             />
-          </OneColumnSection>
+          </MultipleColumnsSection>
         </ScrollReveal>
 
-        <ScrollReveal direction="left">
+        <ScrollReveal>
           <OneColumnSection>
             <SectionTitle>Learnings</SectionTitle>
             <p>The most notable learning experience in this project consisted in realizing how important an iterative process is. Since the whole project was researched, ideated and developed in roughly 4 months, some iterations had to be skipped to respect the given timeframe. The usability issues that emerged, regarding game design, user interface and hardware design, could have been spotted way earlier with low-fidelity versions and therefore be fixed along the way.</p>

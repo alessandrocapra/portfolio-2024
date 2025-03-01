@@ -10,7 +10,7 @@ export default function WhistleblowerProject() {
     <AnimatedPage>
       <div className="text-gray-900 dark:text-gray-300">
         <ProjectHeader title='Whistleblower platform' tags={['UX Design', 'UI Design']} />
-        
+
         <ScrollReveal>
           <ProjectHighlight text='A whistleblowing platform allowing organizations to embed a workflow into their existing system that enables employees to freely speak up about misconducts.' />
         </ScrollReveal>
@@ -51,17 +51,19 @@ export default function WhistleblowerProject() {
         </ScrollReveal>
 
         <ScrollReveal direction="up">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
-            <div className="lg:space-y-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
+            <div className="space-y-4 md:space-y-8">
               <ProjectImage
                 src="/images/projects/whistleblower/whistleblower-wf-ui.png"
                 alt="Whistleblower wireframes and UI"
                 hasShadow
+                aspectRatio="unset"
               />
               <ProjectImage
                 src="/images/projects/whistleblower/whistleblower-wf.png"
                 alt="Whistleblower wireframes"
                 hasShadow
+                aspectRatio="unset"
               />
             </div>
             <div className="lg:flex lg:items-center">
@@ -69,6 +71,7 @@ export default function WhistleblowerProject() {
                 src="/images/projects/whistleblower/whistleblower-ui.png"
                 alt="Whistleblower UI"
                 hasShadow
+                aspectRatio="unset"
               />
             </div>
           </div>

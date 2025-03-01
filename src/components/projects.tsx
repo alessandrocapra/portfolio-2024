@@ -15,7 +15,7 @@ const Pill = ({ children }: PropsWithChildren) => {
 
 export const ProjectHeader = ({ title, tags }: { title: string, tags: string[] }) => {
   return (
-    <div className="pb-8 flex flex-col items-center text-center max-w-prose mx-auto">
+    <div className="p-2 sm:p-8 lg:p-12 flex flex-col items-center text-center max-w-prose mx-auto">
       <h1 className="text-gray-900 dark:text-gray-300 pb-4">{title}</h1>
       <PillContainer>
         {tags.map((tag) => (
@@ -29,14 +29,14 @@ export const ProjectHeader = ({ title, tags }: { title: string, tags: string[] }
 export const ProjectHighlight = ({ text }: { text: string }) => {
   return (
     <div className="py-8 max-w-prose mx-auto">
-      <p className="text-xl text-gray-900 dark:text-gray-300">{text}</p>
+      <p className="text-lg text-gray-900 dark:text-gray-300">{text}</p>
     </div>
   )
 }
 
 export const SectionTitle = ({ children, className }: PropsWithChildren<{ className?: string }>) => {
   return (
-    <h2 className={twMerge("text-xl font-medium pb-4 text-gray-900 dark:text-gray-300", className)}>
+    <h2 className={twMerge("text-xl font-medium text-gray-900 dark:text-gray-300", className)}>
       {children}
     </h2>
   )
