@@ -205,14 +205,14 @@ export const GamifiedRespiratoryExercisesProject = () => {
         </ScrollReveal>
 
         <ScrollReveal direction="right">
-          <MultipleColumnsSection>
+          <OneColumnSection>
             <ProjectImage
               src="/images/projects/gamified-respiratory-exercises/master-thesis-settings.png"
               alt="Settings screen"
               hasShadow
               aspectRatio="4/3"
             />
-          </MultipleColumnsSection>
+          </OneColumnSection>
         </ScrollReveal>
 
         <ScrollReveal>
