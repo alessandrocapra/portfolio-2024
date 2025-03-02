@@ -24,13 +24,13 @@ export default function About() {
   };
 
   const item = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: 40,
       scale: 0.9
     },
-    show: { 
-      opacity: 1, 
+    show: {
+      opacity: 1,
       y: 0,
       scale: 1,
       transition: {
@@ -46,7 +46,7 @@ export default function About() {
       <div className="lg:space-y-6">
         <ScrollReveal>
           <div className="xl:flex xl:flex-row-reverse xl:justify-between xl:items-center">
-            <div className="w-full xl:w-1/2 aspect-[16/9] rounded-lg overflow-hidden">
+            <div className="w-full xl:w-1/2 aspect-[16/9] rounded-lg overflow-hidden md:max-xl:max-h-[40vh]">
               <img
                 src='/images/about/south-africa.jpg'
                 alt="South Africa landscape"
@@ -82,7 +82,7 @@ export default function About() {
               </ul>
             </div>
             <div className="xl:w-1/2">
-              <motion.div 
+              <motion.div
                 className="grid grid-cols-2 md:grid-cols-3 gap-3"
                 variants={container}
                 initial="hidden"

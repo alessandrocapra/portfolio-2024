@@ -1,5 +1,6 @@
 import AnimatedPage from "./components/AnimatedPage";
 import { ProfileImage } from "./components/images";
+import { BulletList } from "./components/projects";
 
 function App() {
   return (
@@ -19,10 +20,10 @@ function App() {
           </div>
         </div>
         <div>
-          <h2 className="font-mono pb-4">TLDR;</h2>
-          <ul className="list-disc list-inside space-y-3">
+          <h2 className="font-mono pb-4">In short</h2>
+          <BulletList className="pb-8">
             <li>
-              <span className="font-semibold">Frontend engineer</span> | 7+ YOE
+              <span className="font-semibold">Frontend engineer</span> | 7+ years of experience
             </li>
             <li>
               Experienced in crafting web (<span>React, NextJS</span>) and mobile (<span>React Native</span>) experiences
@@ -36,7 +37,7 @@ function App() {
             <li>
               Tech enthusiast always eager to explore new tools and approaches
             </li>
-          </ul>
+          </BulletList>
         </div>
       </div>
     </AnimatedPage>

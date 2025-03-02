@@ -5,9 +5,9 @@ type ScrollRevealProps = PropsWithChildren<{
   direction?: "left" | "right" | "up" | "down";
 }>;
 
-const ScrollReveal = ({ children, direction = "left" }: ScrollRevealProps) => {
+const ScrollReveal = ({ children, direction = "up" }: ScrollRevealProps) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { 
+  const isInView = useInView(ref, {
     once: true,
     amount: 0.3
   });
@@ -15,12 +15,12 @@ const ScrollReveal = ({ children, direction = "left" }: ScrollRevealProps) => {
   return (
     <motion.div
       ref={ref}
-      initial={{ 
+      initial={{
         opacity: 0,
         y: direction === "up" ? 40 : direction === "down" ? -40 : 0,
         x: direction === "left" ? -40 : direction === "right" ? 40 : 0
       }}
-      animate={{ 
+      animate={{
         opacity: isInView ? 1 : 0,
         y: isInView ? 0 : direction === "up" ? 40 : direction === "down" ? -40 : 0,
         x: isInView ? 0 : direction === "left" ? -40 : direction === "right" ? 40 : 0

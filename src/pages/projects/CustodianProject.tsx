@@ -32,6 +32,7 @@ export default function CustodianProject() {
             <ProjectImage
               src="/images/projects/custodian/custodian-concept.png"
               alt="Custodian concept"
+              aspectRatio="1/1"
               hasShadow
             />
           </MultipleColumnsSection>
@@ -39,16 +40,15 @@ export default function CustodianProject() {
 
         <ScrollReveal direction="left">
           <MultipleColumnsSection reverse={true}>
-            <div className="max-w-prose">
-              <article>
-                <SectionTitle>Requirements, wireframes and UI</SectionTitle>
-                <p>The initial calls with the stakeholders defined the goal of the project: an easy-to-use mobile app that showcases the portfolio of fiat and crypto currencies currently owned by a customer. Additionally, the user must be able to purchase, sell or swap crypto-currencies.</p>
-                <p>The initial sketch shown below provided a good starting point for discussion and further definition of information architecture and user experience design. This app showcases the complete workflow of a crypto custodian use case, and can be used by a company to kickstart their own custodian project and manage the compliance and operational part through the Nexus portal.</p>
-              </article>
-            </div>
+            <article className="max-w-prose">
+              <SectionTitle>Requirements, wireframes and UI</SectionTitle>
+              <p>The initial calls with the stakeholders defined the goal of the project: an easy-to-use mobile app that showcases the portfolio of fiat and crypto currencies currently owned by a customer. Additionally, the user must be able to purchase, sell or swap crypto-currencies.</p>
+              <p>The initial sketch shown below provided a good starting point for discussion and further definition of information architecture and user experience design. This app showcases the complete workflow of a crypto custodian use case, and can be used by a company to kickstart their own custodian project and manage the compliance and operational part through the Nexus portal.</p>
+            </article>
             <ProjectImage
               src="/images/projects/custodian/custodian-wireframes.png"
               alt="Custodian wireframes"
+              aspectRatio="unset"
               hasShadow
             />
           </MultipleColumnsSection>
