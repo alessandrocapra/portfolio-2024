@@ -13,7 +13,7 @@ const ScrollReveal = ({ children, direction = "up" }: ScrollRevealProps) => {
   });
 
   return (
-    <div className="overflow-hidder">
+    <div className="overflow-hidden">
       <motion.div
         ref={ref}
         initial={{
