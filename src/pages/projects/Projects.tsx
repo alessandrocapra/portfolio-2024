@@ -33,7 +33,8 @@ export default function Projects() {
 
   return (
     <AnimatedPage>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <h1 className="text-gray-900 dark:text-gray-300">Projects</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-12 pt-4 md:pt-8">
         <ProjectCard title='Custodian' url='/projects/custodian' bgImageUrl={`${imagesFolder}/custodian/custodian-header.png`} />
         <ProjectCard title='Whistleblower' url='/projects/whistleblower' bgImageUrl={`${imagesFolder}/whistleblower/whistleblower-header.png`} />
         <ProjectCard title='Gamified respiratory exercises' url='/projects/gamified-respiratory-exercises' bgImageUrl={`${imagesFolder}/gamified-respiratory-exercises/master-thesis-header.png`} />

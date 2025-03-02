@@ -31,13 +31,11 @@ export default function WhistleblowerProject() {
               </p>
               <p>My role in this project was to gather business requirements from stakeholders, discuss and redefine them through low-fidelity wireframes. Lastly, I delivered the final UI, focusing on the handoff to developers as well (from Sketch to Zeplin).</p>
             </div>
-            <div className="relative overflow-y-hidden">
-              <ProjectImage
-                src="/images/projects/whistleblower/whistleblower-overview.png"
-                alt="Whistleblower overview"
-                hasShadow
-              />
-            </div>
+            <ProjectImage
+              src="/images/projects/whistleblower/whistleblower-overview.png"
+              alt="Whistleblower overview"
+              hasShadow
+            />
           </MultipleColumnsSection>
         </ScrollReveal>
 

@@ -8,7 +8,7 @@ import { ProjectImage } from "../../components/images"
 export const GamifiedRespiratoryExercisesProject = () => {
   return (
     <AnimatedPage>
-      <div className="text-gray-900 dark:text-gray-300 overflow-x-hidden">
+      <div className="text-gray-900 dark:text-gray-300">
         <ProjectHeader title='Gamified respiratory exercises' tags={['UX Design', 'Game Design', 'Hardware', 'Development']} />
 
         <ScrollReveal>
