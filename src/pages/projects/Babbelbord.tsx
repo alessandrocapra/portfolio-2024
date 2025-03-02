@@ -8,7 +8,7 @@ import { ProjectImage } from "../../components/images";
 export default function Babbelbord() {
   return (
     <AnimatedPage>
-      <div className="text-gray-900 dark:text-gray-300 overflow-x-hidden">
+      <div className="text-gray-900 dark:text-gray-300">
         <ProjectHeader title='Babbelbord' tags={['User research', 'Prototyping', 'Development']} />
 
         <ScrollReveal>

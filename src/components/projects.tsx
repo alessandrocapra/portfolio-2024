@@ -2,7 +2,7 @@ import { PropsWithChildren } from "react"
 import { twMerge } from "tailwind-merge"
 
 const PillContainer = ({ children }: PropsWithChildren) => {
-  return <div className="flex flex-wrap gap-3">{children}</div>
+  return <div className="flex justify-center flex-wrap gap-3">{children}</div>
 }
 
 const Pill = ({ children }: PropsWithChildren) => {
@@ -16,7 +16,7 @@ const Pill = ({ children }: PropsWithChildren) => {
 export const ProjectHeader = ({ title, tags }: { title: string, tags: string[] }) => {
   return (
     <div className="p-2 sm:p-8 lg:p-12 flex flex-col items-center text-center max-w-prose mx-auto">
-      <h1 className="text-gray-900 dark:text-gray-300 pb-4">{title}</h1>
+      <h1 className="text-gray-900 dark:text-gray-300 pb-8">{title}</h1>
       <PillContainer>
         {tags.map((tag) => (
           <Pill key={tag}>{tag}</Pill>
@@ -29,7 +29,7 @@ export const ProjectHeader = ({ title, tags }: { title: string, tags: string[] }
 export const ProjectHighlight = ({ text }: { text: string }) => {
   return (
     <div className="py-8 max-w-prose mx-auto">
-      <p className="text-lg text-gray-900 dark:text-gray-300">{text}</p>
+      <p className="text-lg text-gray-900 dark:text-gray-300 text-center">{text}</p>
     </div>
   )
 }
@@ -56,9 +56,10 @@ export const NiceInlineLink = ({ children, to }: PropsWithChildren<{ to: string 
       href={to}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline"
+      className="group relative text-green-600 dark:text-green-400 hover:text-green-800 dark:hover:text-green-300 transition-colors duration-300"
     >
       {children}
+      <span className="absolute left-0 -bottom-1 w-0 h-px bg-current transition-all duration-300 group-hover:w-full"></span>
     </a>
   )
 }
