@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /CV_Alessandro_Capra.pdf
+Allow: /
+Sitemap: https://alessandrocapra.me/sitemap.xml
