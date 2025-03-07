@@ -46,7 +46,7 @@ const Layout = () => {
         "position": 1,
         "name": "Alessandro Capra - Senior Frontend Engineer",
         "item": "https://alessandrocapra.me/",
-        "description": "7= years of experience - React/React Native/NextJS/Typescript/Cypress/Playwright"
+        "description": "7+ years of experience - React, React Native, NextJS, Typescript, Cypress, Playwright"
       },
       ...(location.pathname !== '/' ? [
         {
