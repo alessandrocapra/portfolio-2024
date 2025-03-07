@@ -48,17 +48,20 @@ const Layout = () => {
         "item": "https://alessandrocapra.me/",
         "description": "7+ years of experience - React, React Native, NextJS, Typescript, Cypress, Playwright"
       },
-      ...(location.pathname !== '/' ? [
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": location.pathname.startsWith('/projects') ? "Projects" : "About",
-          "item": `https://alessandrocapra.me${location.pathname.startsWith('/projects') ? '/projects' : '/about'}`,
-          "description": location.pathname.startsWith('/projects')
-            ? "Check my work"
-            : "Some more info about me"
-        } as ListItem
-      ] : [])
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Projects",
+        "item": "https://alessandrocapra.me/projects",
+        "description": "Check out my work"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "About",
+        "item": "https://alessandrocapra.me/about",
+        "description": "Something about me"
+      }
     ]
   };
 
