@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { usePreloadImages } from "../hooks/usePreloadImages";
 import { useTheme } from "../context/ThemeContext";
-import { BreadcrumbList, ListItem, WithContext } from "schema-dts";
+import { BreadcrumbList, WithContext } from "schema-dts";
 import { JsonLd } from "react-schemaorg";
 
 const CustomNavLink = ({ children, to, ...props }: NavLinkProps) => {
