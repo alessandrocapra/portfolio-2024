@@ -14,6 +14,7 @@ import CustodianProject from "./pages/projects/CustodianProject.tsx";
 import WhistleblowerProject from "./pages/projects/WhistleblowerProject.tsx";
 import { GamifiedRespiratoryExercisesProject } from "./pages/projects/GamifiedRespiratoryExercisesProject.tsx";
 import Babbelbord from "./pages/projects/Babbelbord.tsx";
+import { GenericErrorBoundary } from './components/GenericErrorBoundary.tsx';
 
 const router = createBrowserRouter([
   {
@@ -21,32 +22,41 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/",
-        element: <App />,
-      },
-      {
-        path: "/projects",
-        element: <Projects />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/projects/custodian",
-        element: <CustodianProject />,
-      },
-      {
-        path: "/projects/whistleblower",
-        element: <WhistleblowerProject />,
-      },
-      {
-        path: "/projects/gamified-respiratory-exercises",
-        element: <GamifiedRespiratoryExercisesProject />,
-      },
-      {
-        path: "/projects/babbelbord",
-        element: <Babbelbord />,
+        errorElement: <GenericErrorBoundary />,
+        children: [
+          {
+            index: true,
+            element: <App />,
+          },
+          {
+            path: "projects",
+            element: <Projects />,
+          },
+          {
+            path: "about",
+            element: <About />,
+          },
+          {
+            path: "projects/custodian",
+            element: <CustodianProject />,
+          },
+          {
+            path: "projects/whistleblower",
+            element: <WhistleblowerProject />,
+          },
+          {
+            path: "projects/gamified-respiratory-exercises",
+            element: <GamifiedRespiratoryExercisesProject />,
+          },
+          {
+            path: "projects/babbelbord",
+            element: <Babbelbord />,
+          },
+          {
+            path: "*",
+            element: <GenericErrorBoundary />,
+          }
+        ],
       },
     ],
   },
