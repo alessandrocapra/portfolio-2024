@@ -93,14 +93,16 @@ export const GamifiedRespiratoryExercisesProject = () => {
         <ScrollReveal direction="up">
           <MultipleColumnsSection>
             <ProjectImage
-              src="/images/projects/gamified-respiratory-exercises/technical_design.png"
+              src="/images/projects/gamified-respiratory-exercises/technical_design.jpg"
               alt="Technical design"
               hasShadow
+              aspectRatio="unset"
             />
             <ProjectImage
-              src="/images/projects/gamified-respiratory-exercises/calibration.png"
+              src="/images/projects/gamified-respiratory-exercises/calibration.jpg"
               alt="Calibration screen"
               hasShadow
+              aspectRatio="unset"
             />
           </MultipleColumnsSection>
         </ScrollReveal>
@@ -113,7 +115,7 @@ export const GamifiedRespiratoryExercisesProject = () => {
               <p>Eventually, the choice fell on the MPXV7002DP differential pressure sensor, given its reliability, speed and fulfilment of all the aforementioned requirements.</p>
             </article>
             <ProjectImage
-              src="/images/projects/gamified-respiratory-exercises/master-thesis-schema.png"
+              src="/images/projects/gamified-respiratory-exercises/master-thesis-schema.jpg"
               alt="Hardware schema"
               hasShadow
               aspectRatio="4/3"
@@ -124,13 +126,13 @@ export const GamifiedRespiratoryExercisesProject = () => {
         <ScrollReveal direction="up">
           <MultipleColumnsSection>
             <ProjectImage
-              src="/images/projects/gamified-respiratory-exercises/master-thesis-circuit.png"
+              src="/images/projects/gamified-respiratory-exercises/master-thesis-circuit.jpg"
               alt="Circuit design"
               hasShadow
               aspectRatio="4/3"
             />
             <ProjectImage
-              src="/images/projects/gamified-respiratory-exercises/master-thesis-casing.png"
+              src="/images/projects/gamified-respiratory-exercises/master-thesis-casing.jpg"
               alt="Hardware casing"
               hasShadow
               aspectRatio="4/3"
@@ -149,13 +151,13 @@ export const GamifiedRespiratoryExercisesProject = () => {
         <ScrollReveal direction="up">
           <MultipleColumnsSection>
             <ProjectImage
-              src="/images/projects/gamified-respiratory-exercises/master-thesis-training.png"
+              src="/images/projects/gamified-respiratory-exercises/master-thesis-training.jpg"
               alt="Training mode"
               hasShadow
               aspectRatio="unset"
             />
             <ProjectImage
-              src="/images/projects/gamified-respiratory-exercises/master-thesis-ranking.png"
+              src="/images/projects/gamified-respiratory-exercises/master-thesis-ranking.jpg"
               alt="Ranking screen"
               hasShadow
               aspectRatio="unset"
@@ -207,7 +209,7 @@ export const GamifiedRespiratoryExercisesProject = () => {
         <ScrollReveal direction="right">
           <OneColumnSection>
             <ProjectImage
-              src="/images/projects/gamified-respiratory-exercises/master-thesis-settings.png"
+              src="/images/projects/gamified-respiratory-exercises/master-thesis-settings.jpg"
               alt="Settings screen"
               hasShadow
               aspectRatio="4/3"

@@ -17,8 +17,9 @@ export default function WhistleblowerProject() {
 
         <ScrollReveal direction="up">
           <ProjectImage
-            src="/images/projects/whistleblower/whistleblower-concept.png"
+            src="/images/projects/whistleblower/whistleblower-concept.jpg"
             alt="Whistleblower concept"
+            aspectRatio="unset"
           />
         </ScrollReveal>
 
@@ -32,7 +33,7 @@ export default function WhistleblowerProject() {
               <p>My role in this project was to gather business requirements from stakeholders, discuss and redefine them through low-fidelity wireframes. Lastly, I delivered the final UI, focusing on the handoff to developers as well (from Sketch to Zeplin).</p>
             </div>
             <ProjectImage
-              src="/images/projects/whistleblower/whistleblower-overview.png"
+              src="/images/projects/whistleblower/whistleblower-overview.jpg"
               alt="Whistleblower overview"
               hasShadow
             />
@@ -52,13 +53,13 @@ export default function WhistleblowerProject() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
             <div className="space-y-4 md:space-y-8">
               <ProjectImage
-                src="/images/projects/whistleblower/whistleblower-wf-ui.png"
+                src="/images/projects/whistleblower/whistleblower-wf-ui.jpg"
                 alt="Whistleblower wireframes and UI"
                 hasShadow
                 aspectRatio="unset"
               />
               <ProjectImage
-                src="/images/projects/whistleblower/whistleblower-wf.png"
+                src="/images/projects/whistleblower/whistleblower-wf.jpg"
                 alt="Whistleblower wireframes"
                 hasShadow
                 aspectRatio="unset"
@@ -66,7 +67,7 @@ export default function WhistleblowerProject() {
             </div>
             <div className="lg:flex lg:items-center">
               <ProjectImage
-                src="/images/projects/whistleblower/whistleblower-ui.png"
+                src="/images/projects/whistleblower/whistleblower-ui.jpg"
                 alt="Whistleblower UI"
                 hasShadow
                 aspectRatio="unset"

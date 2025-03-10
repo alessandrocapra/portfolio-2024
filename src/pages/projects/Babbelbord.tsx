@@ -132,14 +132,14 @@ export default function Babbelbord() {
         <MultipleColumnsSection>
           <ScrollReveal direction="left">
             <ProjectImage
-              src="/images/projects/babbelbord/select-players.png"
+              src="/images/projects/babbelbord/select-players.jpg"
               alt="Select players screen"
               hasShadow
             />
           </ScrollReveal>
           <ScrollReveal direction="right">
             <ProjectImage
-              src="/images/projects/babbelbord/new-game.png"
+              src="/images/projects/babbelbord/new-game.jpg"
               alt="Wireframe"
               hasShadow
             />
