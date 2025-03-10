@@ -17,7 +17,7 @@ export default function CustodianProject() {
 
         <ScrollReveal direction="up">
           <ProjectImage
-            src="/images/projects/custodian/custodian-showcase.png"
+            src="/images/projects/custodian/custodian-showcase.jpg"
             alt="Custodian app showcase"
           />
         </ScrollReveal>
@@ -30,7 +30,7 @@ export default function CustodianProject() {
               <p>We chose React Native as framework since we could support both Android and iOS with one unified codebase. My role in the project covered the initial requirements gathering, the creation of wireframes to discuss an initial version and improve it iteratively through several feedback sessions. Moreover, I created the screens and components in React Native, using Native Base as a UI framework to speed up development.</p>
             </div>
             <ProjectImage
-              src="/images/projects/custodian/custodian-concept.png"
+              src="/images/projects/custodian/custodian-concept.jpg"
               alt="Custodian concept"
               aspectRatio="1/1"
               hasShadow
@@ -46,7 +46,7 @@ export default function CustodianProject() {
               <p>The initial sketch shown below provided a good starting point for discussion and further definition of information architecture and user experience design. This app showcases the complete workflow of a crypto custodian use case, and can be used by a company to kickstart their own custodian project and manage the compliance and operational part through the Nexus portal.</p>
             </article>
             <ProjectImage
-              src="/images/projects/custodian/custodian-wireframes.png"
+              src="/images/projects/custodian/custodian-wireframes.jpg"
               alt="Custodian wireframes"
               aspectRatio="unset"
               hasShadow
