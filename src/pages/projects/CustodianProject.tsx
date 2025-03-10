@@ -19,6 +19,7 @@ export default function CustodianProject() {
           <ProjectImage
             src="/images/projects/custodian/custodian-showcase.jpg"
             alt="Custodian app showcase"
+            lazyLoad={false}
           />
         </ScrollReveal>
 

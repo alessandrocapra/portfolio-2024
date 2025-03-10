@@ -56,7 +56,6 @@ export default function About() {
                   src='/images/about/south-africa.jpg'
                   alt="South Africa landscape"
                   className="w-full h-full object-cover"
-                  loading="eager"
                   decoding="async"
                 />
               </div>
