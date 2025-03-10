@@ -17,7 +17,7 @@ export default function Babbelbord() {
 
         <ScrollReveal direction="up">
           <ProjectImage
-            src="/images/projects/babbelbord/babbelbord.png"
+            src="/images/projects/babbelbord/babbelbord.jpg"
             alt="Babbelbord overview"
             aspectRatio="unset"
           />
@@ -65,19 +65,19 @@ export default function Babbelbord() {
         <ScrollReveal direction="up">
           <ThreeColumnsSection className="lg:items-stretch">
             <ProjectImage
-              src="/images/projects/babbelbord/explore.png"
+              src="/images/projects/babbelbord/explore.jpg"
               alt="Explore feature"
               aspectRatio="unset"
               objectFit="cover"
             />
             <ProjectImage
-              src="/images/projects/babbelbord/discuss.png"
+              src="/images/projects/babbelbord/discuss.jpg"
               alt="Discussion feature"
               aspectRatio="unset"
               objectFit="cover"
             />
             <ProjectImage
-              src="/images/projects/babbelbord/cards.png"
+              src="/images/projects/babbelbord/cards.jpg"
               alt="Cards feature"
               aspectRatio="unset"
             />
@@ -101,7 +101,7 @@ export default function Babbelbord() {
         <MultipleColumnsSection>
           <ScrollReveal direction="left">
             <ProjectImage
-              src="/images/projects/babbelbord/game-idea-1.png"
+              src="/images/projects/babbelbord/game-idea-1.jpg"
               alt="Game idea 1"
               hasShadow
               aspectRatio="4/3"
@@ -109,7 +109,7 @@ export default function Babbelbord() {
           </ScrollReveal>
           <ScrollReveal direction="right">
             <ProjectImage
-              src="/images/projects/babbelbord/game-idea-2.png"
+              src="/images/projects/babbelbord/game-idea-2.jpg"
               alt="Game idea 2"
               hasShadow
               aspectRatio="4/3"
@@ -120,7 +120,7 @@ export default function Babbelbord() {
         <OneColumnSection>
           <ScrollReveal direction="left">
             <ProjectImage
-              src="/images/projects/babbelbord/wireframe.png"
+              src="/images/projects/babbelbord/wireframe.jpg"
               alt="Wireframe"
               hasShadow
               aspectRatio="unset"
@@ -177,7 +177,7 @@ export default function Babbelbord() {
               </BulletList>
             </div>
             <ProjectImage
-              src="/images/projects/babbelbord/testing.png"
+              src="/images/projects/babbelbord/testing.jpg"
               alt="Testing session"
               hasShadow
             />
