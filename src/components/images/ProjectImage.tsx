@@ -4,6 +4,7 @@ interface ProjectImageProps {
   aspectRatio?: '16/9' | '4/3' | '1/1' | 'unset';
   hasShadow?: boolean;
   objectFit?: 'cover' | 'contain';
+  lazyLoad?: boolean
 }
 
 export const ProjectImage = ({
@@ -11,7 +12,8 @@ export const ProjectImage = ({
   alt,
   aspectRatio = '16/9',
   hasShadow = false,
-  objectFit = 'contain'
+  objectFit = 'contain',
+  lazyLoad = true
 }: ProjectImageProps) => {
   const aspectRatioClass = {
     'unset': '',
@@ -25,7 +27,7 @@ export const ProjectImage = ({
   const originalExt = lastDotIndex !== -1 ? src.substring(lastDotIndex + 1) : 'jpg';
 
   const webpPath = `${basePath}.webp`;
-  const originalPath = src; 
+  const originalPath = src;
 
   return (
     <div className={`w-full ${aspectRatioClass}`}>
@@ -42,7 +44,7 @@ export const ProjectImage = ({
           src={originalPath}
           alt={alt}
           className={`w-full h-full object-${objectFit} rounded-lg ${hasShadow ? 'shadow-lg' : ''}`}
-          loading="lazy"
+          loading={lazyLoad ? 'lazy' : undefined}
           decoding="async"
         />
       </picture>

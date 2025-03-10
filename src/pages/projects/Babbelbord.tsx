@@ -20,6 +20,7 @@ export default function Babbelbord() {
             src="/images/projects/babbelbord/babbelbord.jpg"
             alt="Babbelbord overview"
             aspectRatio="unset"
+            lazyLoad={false}
           />
         </ScrollReveal>
 
