@@ -1,40 +1,28 @@
 # Stage 1: Build
-FROM node:18-bookworm AS builder
+FROM node:20-alpine AS base
+# Alpine uses apk, not apt-get!
+RUN apk add --no-cache \
+    vips-dev \
+    build-base \
+    autoconf \
+    automake \
+    libtool \
+    nasm \
+    zlib-dev \
+    libpng-dev \
+    && corepack enable
 
-# Install system dependencies for sharp (image optimization)
-RUN apt-get update && apt-get install -y \
-  build-essential \
-  libvips-dev \
-  && rm -rf /var/lib/apt/lists/*
-
-# Enable pnpm
-RUN npm install -g corepack@latest && \
-  corepack enable && \
-  corepack prepare pnpm@latest --activate && corepack prepare pnpm@latest --activate
-
+# Stage 2: Builder
+FROM base AS builder
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
 WORKDIR /app
-
-# Copy package files first for better caching
-COPY pnpm-lock.yaml package.json ./
-
-# Install dependencies
-RUN pnpm install --frozen-lockfile
-
-# Copy source code
 COPY . .
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
+    pnpm install --frozen-lockfile && \
+    pnpm build
 
-# Build the app
-RUN pnpm build
-
-# Stage 2: Production
-FROM nginx:1.25-bookworm
-
-# Remove default configuration
-RUN rm /etc/nginx/conf.d/default.conf
-
-# Copy custom Nginx config
-COPY docker/nginx.conf /etc/nginx/conf.d/
-
-# Copy built files with proper permissions
+# Stage 3: Production
+FROM nginx:alpine
 COPY --from=builder --chown=nginx:nginx /app/dist /usr/share/nginx/html
-
+COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
