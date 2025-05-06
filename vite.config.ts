@@ -3,6 +3,15 @@ import { reactRouter } from '@react-router/dev/vite'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 
 export default defineConfig({
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: `[name]-[hash].js`,
+        chunkFileNames: `[name]-[hash].js`,
+        assetFileNames: `[name]-[hash].[ext]`
+      }
+    }
+  },
   plugins: [
     reactRouter(),
     ViteImageOptimizer({
