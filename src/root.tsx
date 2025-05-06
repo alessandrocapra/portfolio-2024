@@ -8,22 +8,18 @@ import {
 } from "react-router";
 import { ThemeProvider } from "./context/ThemeContext";
 
-export function Layout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Root() {
   return (
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
         <link
-          href="images/logo-dark.png"
+          href="/images/logo-dark.png"
           rel="icon"
           media="(prefers-color-scheme: light)"
         />
         <link
-          href="images/logo-light.png"
+          href="/images/logo-light.png"
           rel="icon"
           media="(prefers-color-scheme: dark)"
         />
@@ -41,17 +37,12 @@ export function Layout({
         <Links />
       </head>
       <body>
-        {children}
-        <ScrollRestoration />
-        <Scripts />
+        <ThemeProvider>
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+        </ThemeProvider>
       </body>
     </html>
   );
 }
-
-export default function Root() {
-  return (<ThemeProvider>
-    <Outlet />
-  </ThemeProvider>)
-}
-
