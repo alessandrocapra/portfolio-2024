@@ -2,15 +2,15 @@
 FROM node:20-alpine AS base
 # Alpine uses apk, not apt-get!
 RUN apk add --no-cache \
-    vips-dev \
-    build-base \
-    autoconf \
-    automake \
-    libtool \
-    nasm \
-    zlib-dev \
-    libpng-dev \
-    && corepack enable
+  vips-dev \
+  build-base \
+  autoconf \
+  automake \
+  libtool \
+  nasm \
+  zlib-dev \
+  libpng-dev \
+  && corepack enable
 
 # Stage 2: Builder
 FROM base AS builder
@@ -19,10 +19,10 @@ ENV PATH="$PNPM_HOME:$PATH"
 WORKDIR /app
 COPY . .
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
-    pnpm install --frozen-lockfile && \
-    pnpm build
+  pnpm install --frozen-lockfile && \
+  pnpm build
 
 # Stage 3: Production
 FROM nginx:alpine
-COPY --from=builder --chown=nginx:nginx /app/dist /usr/share/nginx/html
+COPY --from=builder --chown=nginx:nginx /app/build/client /usr/share/nginx/html
 COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
