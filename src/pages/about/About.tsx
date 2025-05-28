@@ -3,7 +3,6 @@ import { ContactForm } from "../../components/ContactForm";
 import ScrollReveal from "../../components/ScrollReveal";
 import { GalleryImage } from "../../components/images";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet"
 
 export default function About() {
   const images = [
@@ -44,9 +43,6 @@ export default function About() {
 
   return (
     <>
-      <Helmet>
-        <link rel="preload" as="image" href="images/about/south-africa.jpg" />
-      </Helmet>
       <AnimatedPage>
         <div className="lg:space-y-6">
           <ScrollReveal>

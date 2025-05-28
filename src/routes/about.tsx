@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet"
 import AnimatedPage from "../components/AnimatedPage";
 import { ContactForm } from "../components/ContactForm";
 import { GalleryImage } from "../components/images";
