@@ -5,6 +5,21 @@ import AnimatedPage from "../../components/AnimatedPage"
 import ScrollReveal from "../../components/ScrollReveal"
 import { ProjectImage } from "../../components/images"
 
+export function meta() {
+  return [
+    { title: 'Gamified Respiratory Exercises - Alessandro Capra' },
+    {
+      name: 'description',
+      content: 'Custom breath-analyzing hardware coupled with a videogame to help children with Duchenne Muscular Dystrophy improve breathing independently outside therapy hours.'
+    },
+    {
+      tagName: 'link',
+      rel: 'canonical',
+      href: 'https://alessandrocapra.me/projects/gamified-respiratory-exercises'
+    }
+  ];
+}
+
 export default function GamifiedRespiratoryExercisesProject() {
   return (
     <AnimatedPage>

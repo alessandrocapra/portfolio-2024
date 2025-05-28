@@ -4,6 +4,22 @@ import { ProfileImage } from "../components/images";
 import { BulletList } from "../components/projects";
 import ScrollReveal from "../components/ScrollReveal";
 
+
+export function meta() {
+  return [
+    { title: 'Alessandro Capra - Frontend Engineer' },
+    {
+      name: 'description',
+      content: 'Frontend engineer specializing in React and modern web development. Based in the Netherlands with international experience.'
+    },
+    {
+      tagName: 'link',
+      rel: 'canonical',
+      href: 'https://alessandrocapra.me/'
+    }
+  ];
+}
+
 export default function Index() {
   return (
     <AnimatedPage>

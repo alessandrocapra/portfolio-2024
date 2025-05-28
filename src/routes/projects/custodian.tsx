@@ -5,6 +5,21 @@ import AnimatedPage from "../../components/AnimatedPage";
 import ScrollReveal from "../../components/ScrollReveal";
 import { ProjectImage } from "../../components/images";
 
+export function meta() {
+  return [
+    { title: 'Crypto Custodian Mobile App - Alessandro Capra' },
+    {
+      name: 'description',
+      content: 'A React Native mobile app showcasing Quantoz Nexus API capabilities. Features cryptocurrency buying, selling, and swapping with cross-platform support for iOS and Android.'
+    },
+    {
+      tagName: 'link',
+      rel: 'canonical',
+      href: 'https://alessandrocapra.me/projects/custodian'
+    }
+  ];
+}
+
 export default function CustodianProject() {
   return (
     <AnimatedPage>

@@ -5,6 +5,27 @@ import { ContactForm } from "../components/ContactForm";
 import { GalleryImage } from "../components/images";
 import ScrollReveal from "../components/ScrollReveal";
 
+export function meta() {
+  return [
+    { title: 'About Alessandro Capra - Frontend Engineer' },
+    {
+      name: 'description',
+      content: 'Learn about Alessandro Capra, a frontend engineer with international experience across Europe. Passionate about software development, mountains, music, and travel.'
+    },
+    {
+      tagName: 'link',
+      rel: 'canonical',
+      href: 'https://alessandrocapra.me/about'
+    },
+    {
+      tagName: 'link',
+      rel: 'preload',
+      as: 'image',
+      href: 'images/about/south-africa.jpg'
+    }
+  ];
+}
+
 export default function About() {
   const images = [
     { id: '1', url: '/images/about/venice.jpg', alt: 'Venice', position: '50% 50%', aspectRatio: '4/3' },
@@ -44,9 +65,6 @@ export default function About() {
 
   return (
     <>
-      <Helmet>
-        <link rel="preload" as="image" href="images/about/south-africa.jpg" />
-      </Helmet>
       <AnimatedPage>
         <div className="lg:space-y-6">
           <ScrollReveal>
