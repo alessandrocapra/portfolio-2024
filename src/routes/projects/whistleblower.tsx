@@ -5,6 +5,21 @@ import AnimatedPage from "../../components/AnimatedPage";
 import ScrollReveal from "../../components/ScrollReveal";
 import { ProjectImage } from "../../components/images";
 
+export function meta() {
+  return [
+    { title: 'Whistleblower Platform - Alessandro Capra' },
+    {
+      name: 'description',
+      content: 'A whistleblowing platform enabling organizations to embed secure workflows for employees to safely report misconduct. Features UX/UI design from wireframes to final handoff.'
+    },
+    {
+      tagName: 'link',
+      rel: 'canonical',
+      href: 'https://alessandrocapra.me/projects/whistleblower'
+    }
+  ];
+}
+
 export default function WhistleblowerProject() {
   return (
     <AnimatedPage>

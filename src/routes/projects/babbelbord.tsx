@@ -5,6 +5,23 @@ import AnimatedPage from "../../components/AnimatedPage";
 import ScrollReveal from "../../components/ScrollReveal";
 import { ProjectImage } from "../../components/images";
 
+
+export function meta() {
+  return [
+    { title: 'Babbelbord Project - Alessandro Capra' },
+    {
+      name: 'description',
+      content: 'Babbelbord - A gamified, personalized conversational system for people with mild-moderate dementia and their caretakers. Built with React Native to help patients reminisce memories through technology-enhanced board games.'
+    },
+    {
+      tagName: 'link',
+      rel: 'canonical',
+      href: 'https://alessandrocapra.me/projects/babbelbord'
+    }
+  ];
+}
+
+
 export default function Babbelbord() {
   return (
     <AnimatedPage>

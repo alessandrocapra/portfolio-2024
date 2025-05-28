@@ -28,6 +28,21 @@ const ProjectCard = ({ title, url, bgImageUrl }: ProjectCardProps) => {
   )
 }
 
+export function meta() {
+  return [
+    { title: 'Projects - Alessandro Capra - Frontend Engineer' },
+    {
+      name: 'description',
+      content: 'Explore my portfolio of frontend development projects including React Native apps, UX/UI design work, and innovative healthcare technology solutions.'
+    },
+    {
+      tagName: 'link',
+      rel: 'canonical',
+      href: 'https://alessandrocapra.me/projects'
+    }
+  ];
+}
+
 export default function Projects() {
   const imagesFolder = '/images/projects'
 
