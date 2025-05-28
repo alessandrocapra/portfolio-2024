@@ -26,11 +26,7 @@ export default function Root() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preload"
-          href="https://fonts.gstatic.com/s/worksans/v18/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBi8Jpg.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <Meta />
         <Links />
       </head>
