@@ -46,6 +46,6 @@ jobs:
             docker run -d \
               --name portfolio \
               --restart unless-stopped \
-              -p 3000:80 \
+              -p 127.0.0.1:3000:80 \
               -v /etc/ssl/cloudflare:/etc/ssl/cloudflare:ro \
               alessandrocapra/portfolio:latest
